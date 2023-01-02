@@ -1,15 +1,14 @@
-
-import Sidebar from './Components/Sidebar'
+import React from "react";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <div >
-
-      <Sidebar/>
+    <div>
      
+      <Home />
+      
     </div>
   );
 }
 
 export default App;
- 

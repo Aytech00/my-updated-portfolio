@@ -1,192 +1,119 @@
 
-
+:root{
+  --primary: #0b1628;
+  --secondary:#081322;
+  --link:#64ffda;
+  --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  --primary-font:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+}
 
 .wrapper {
-  display: flex;
-  position: relative;
- 
-}
-
-.sidebar {
-  background-color: #1a1d2b;
-  width: 300px;
-  height: 1000px;
-  position: fixed;
-  border-right: 1px solid #2e344e;
-}
-
-.profilepic_wrap {
-  margin-top: 4em;
-  text-align: center;
-}
-
-.profilepic {
-  width: 45%;
-  height: 40%;
-  border: 7px solid #2e344e;
-  border-radius: 50%;
-}
-
-/* .profilepic_link_wrap {
-} */
-
-.line {
-  border: 0;
-  border-top: 1px solid #2e344e;
-  height: 0px;
-  margin-top: 20px;
-}
-
-.menu_items_wrap {
-  margin-top: 5rem;
-  text-align: center;
-}
-
-.ul_wrap {
-  list-style: none;
-  margin-top: 5em;
-  padding: 4px 8px;
-}
-
-.list_wrap {
-  margin-bottom: 5%;
-  text-align: center;
-  padding: 2% 10%;
-  transition: all 250ms ease-in-out;
-}
-
-.list_wrap:hover {
-  background-color: #007fff;
-}
-
-.link {
-  text-decoration: none;
-  font-size: 18px;
-  color: whitesmoke;
-}
-
-
-.footer_wrap{
-    text-align: center;
-    margin-top: 9rem;
-
-    
- 
-  
-}
-
-
-.footer_text{
-   color: whitesmoke;
-   padding: 6% 0%;
+    display: flex;
+    position: relative;
+     
    
-}
-
-
-/* Contrnt */
-.main_content {
-  background-color: #10121b;
-  margin-left: 10%;
-  text-align: center;
-}
-
-.inner_main_content {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-}
-
-.title_wrap {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.title {
-  color: white;
-  font-size: 50px;
-}
-
-.name_wrap {
-  color: #007fff;
-}
-
-.text_wrap {
-  padding: 0% 15%;
-  text-align: center;
-}
-
-.text {
-  font-size: 18px;
-  color: whitesmoke;
-  line-height: 2;
-}
-
-.icon_wrap {
-  margin-top: 3rem;
-}
-
-.linkedin_icon {
-  color: whitesmoke;
-  margin-right: 1%;
-  border: 3px solid #1f2333;
-  padding: 13px;
-  border-radius: 100px;
-}
-
-.linkedin_icon:hover {
-  color: #007fff;
-}
-
-.twitter_icon {
-  color: whitesmoke;
-  margin-right: 1%;
-  border: 3px solid #1f2333;
-  padding: 13px;
-  border-radius: 100px;
-}
-
-.twitter_icon:hover {
-    color: #007fff;
   }
   
-
-.github_icon {
-  color: whitesmoke;
-  border: 3px solid #1f2333;
-  padding: 13px;
-  border-radius: 100px;
-}
-.github_icon:hover {
-    color: #007fff;
-  }
-  
-/* Mobile */
-@media screen and (max-width: 1189px) {
   .sidebar {
-    display: none;
+    background-color: var(--secondary);
+    width: 250px;
+    height: 1000px;
+    position: fixed;
+    border-right: 1px solid #2e344e;
+  
   }
 
-  .main_content {
-    background-color: #10121b;
-    margin-left: 0;
+  .main_toggle_btn_wrap{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    display: none;
+    
+  }
+  
+ .toggle_wrap{
+  padding: 13px 20px;
+  background-color: var(--primary);
+   border: 1px solid var(--link);
+   color: var(--link);
+   
+  
+
+ }
+
+  .profilepic_wrap {
+    margin-top: 4em;
+    text-align: center;
+    
+    
+     
+  }
+  
+  .profilepic {
+   width: 155px;
+    border: 7px solid #2e344e;
+    border-radius: 55%;
+  
+  
+   
+  }
+
+  .list_line {
+    border: 0;
+    border-top: 1px solid #2e344e;
+    height: 0px;
+    margin-top: 5%;
+   
+  }
+  
+  /* .profilepic_link_wrap {
+   
+  }
+   */
+  
+  .menu_items_wrap {
+    margin-top: 5rem;
     text-align: center;
   }
+  
+  .ul_wrap {
+    list-style: none;
+    padding: 4px 8px;
 
-  .linkedin_icon {
-    margin-right: 3%;
+  }
+  
+  .list_wrap {
+    margin-bottom: 4%;
+    text-align: center;
+    padding: 2% 10%;
+    transition: all 250ms ease-in-out;
+     margin: 3em 3em;
+   
+  }
+  
+  .list_wrap:hover {
+    background-color: var(--link);
+     color: var(--primary);
+  }
+  
+  .link {
+    text-decoration: none;
+    font-size: 18px;
+   color: white;
   }
 
-  .twitter_icon {
-    margin-right: 3%;
+  @media screen and (max-width: 1000px) {
+
+
+     .main_toggle_btn_wrap{
+   
+    display: block;
+    position: absolute;
+    left: 100%;
+        top: 20px;
+    
+  }
   }
 
-  .title {
-    color: white;
-    font-size: 38px;
-  }
 
-  .text{
-
-    line-height: 2.8;
-  }
-}
+  

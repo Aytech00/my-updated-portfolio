@@ -1,0 +1,41 @@
+.footer_wrap{
+    text-align: center;
+
+    
+  
+}
+.footer_line {
+    border: 0;
+    border-top: 1px solid #2e344e;
+    height: 0px;
+   
+  }
+  
+
+.footer_text{
+   color: whitesmoke;
+   margin-top: 10%;
+ 
+  
+   
+}
+
+.line {
+    border: 0;
+    border-top: 1px solid #2e344e;
+    height: 0px;
+   
+  
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .footer_wrap{
+    text-align: center;
+    
+    
+  
+}
+      
+    
+  }
