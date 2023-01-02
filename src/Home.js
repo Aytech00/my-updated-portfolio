@@ -1,7 +1,7 @@
 import { React } from "react";
 import styles from "./Home.module.css";
 import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
-import SideBar from "../Components/SideBar";
+import SideBar from "./Components/Sidebar";
 
 const Home = () => {
 

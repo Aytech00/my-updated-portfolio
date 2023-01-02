@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import img from "../Images/mypic.jpg";
-import styles from "./SideBar.module.css";
+import styles from "./Sidebar.module.css";
 import Footer from "./Footer";
 import { FaAlignJustify } from "react-icons/fa";
 
