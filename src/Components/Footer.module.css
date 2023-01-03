@@ -1,6 +1,11 @@
+.footer_container{
+padding: 15% 0px;
+
+}
+
 .footer_wrap{
     text-align: center;
-
+    padding: 15px 0px;
     
   
 }
@@ -8,13 +13,18 @@
     border: 0;
     border-top: 1px solid #2e344e;
     height: 0px;
+    
    
   }
   
 
 .footer_text{
    color: whitesmoke;
-   margin-top: 10%;
+   margin-top: 15px;
+
+
+
+   
  
   
    

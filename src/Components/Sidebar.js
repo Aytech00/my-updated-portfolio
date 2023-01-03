@@ -54,8 +54,9 @@ const Sidebar = () => {
           </li>
         </ul>
 
-
-        <Footer />
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -3,11 +3,13 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer_wrap}>
-      <hr className={styles.footer_line} />
+    <div className={styles.footer_container}>
+      <footer className={styles.footer_wrap}>
+        <hr className={styles.footer_line} />
 
-      <p className={styles.footer_text}>© 2022 Ayokunumi</p>
-    </footer>
+        <p className={styles.footer_text}>© 2022 Ayokunumi</p>
+      </footer>
+    </div>
   );
 };
 
