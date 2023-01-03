@@ -16,7 +16,7 @@ const Sidebar = () => {
       <div className={styles.sidebar}>
         <div className={styles.main_toggle_btn_wrap}>
           <button className={styles.toggle_wrap} onClick={menuToggler}>
-            <FaAlignJustify />
+            <FaAlignJustify className={styles.toggle_btn} />
           </button>
         </div>
         <div className={styles.profilepic_wrap}>

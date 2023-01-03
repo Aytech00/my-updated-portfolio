@@ -16,7 +16,7 @@
   
   .sidebar {
     background-color: var(--secondary);
-    width: 250px;
+    width: 220px;
     height: 1000px;
     position: fixed;
     border-right: 1px solid #2e344e;
@@ -34,11 +34,16 @@
  .toggle_wrap{
   padding: 13px 20px;
   background-color: var(--primary);
-   border: 1px solid var(--link);
-   color: var(--link);
+   border: 1px solid #2e344e;
+
    
   
 
+ }
+
+ .toggle_btn{
+  font-size: 25px;
+  color: #9e9fa7;
  }
 
   .profilepic_wrap {
@@ -80,16 +85,16 @@
   .ul_wrap {
     list-style: none;
     padding: 4px 8px;
-     margin-top: 1rem;
+     margin-top: 4rem;
 
   }
   
   .list_wrap {
    
     text-align: center;
-    padding: 4% 10%;
+    padding: 8% 10%;
     transition: all 250ms ease-in-out;
-     margin: 5% 0% ;
+     margin: 8% 0% ;
    
   }
   
@@ -115,6 +120,25 @@
     left: 100%;
         top: 20px;
     
+  }
+
+
+   .profilepic_wrap {
+    margin-top: 2em;
+ 
+     
+  }
+
+    .ul_wrap {
+   
+     margin-top: 1rem;
+
+  }
+    .list_wrap {
+   
+   
+     margin: 7% 0% ;
+   
   }
   }
 
