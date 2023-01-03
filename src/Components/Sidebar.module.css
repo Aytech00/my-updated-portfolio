@@ -42,7 +42,7 @@
  }
 
   .profilepic_wrap {
-    margin-top: 5em;
+    margin-top: 2em;
     text-align: center;
     
     
@@ -80,16 +80,16 @@
   .ul_wrap {
     list-style: none;
     padding: 4px 8px;
-     margin-top: 3rem;
+     margin-top: 1rem;
 
   }
   
   .list_wrap {
-    margin-bottom: 20%;
+   
     text-align: center;
-    padding: 6% 10%;
+    padding: 4% 10%;
     transition: all 250ms ease-in-out;
-     margin: 8% 0% ;
+     margin: 5% 0% ;
    
   }
   
@@ -105,7 +105,8 @@
   }
 
   @media screen and (max-width: 1000px) {
-
+      
+    
 
      .main_toggle_btn_wrap{
    
