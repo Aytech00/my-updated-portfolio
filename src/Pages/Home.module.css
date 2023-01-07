@@ -3,22 +3,22 @@
   --primary: #0b1628;
   --secondary:#081322;
   --link:#64ffda;
-        --primary-font:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --primary-font:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 
 }
 
 .main_content {
   background-color: var(--primary);
 
-  text-align: center;
+
 }
 
 .inner_main_content {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   align-items: center;
-  margin-left: 7%;
+
   
 }
 
@@ -39,6 +39,7 @@
 .text_wrap {
  
   text-align: center;
+  padding: 2% 15%;
    
 }
 
@@ -46,7 +47,7 @@
   font-size: 18px;
   color: whitesmoke;
   line-height: 2;
-   padding: 0px 25%;
+   
    font-family: var(--primary-font);
  
 }
@@ -54,6 +55,7 @@
 .icon_wrap {
 
   margin-top: 15px;
+  text-align: center;
  
 }
 
@@ -124,7 +126,7 @@
 .inner_main_content {
   display: flex;
   justify-content: center;
-  height: 100vh;
+
   align-items: center;
  margin-left: 0;
   
@@ -139,6 +141,7 @@
 
   .text {
     line-height: 2.8;
-    padding: 0px 25px;
+    
+   
   }
 }

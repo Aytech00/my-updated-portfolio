@@ -5,6 +5,8 @@ const About = (props) => {
   return (
     <div>
       <SideBar/>
+      
+
 
     </div>
   )

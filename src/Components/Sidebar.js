@@ -1,64 +1,75 @@
 import { React, useState } from "react";
 import img from "../Images/mypic.jpg";
 import styles from "./Sidebar.module.css";
-import Footer from "./Footer";
-import { FaAlignJustify } from "react-icons/fa";
+import * as FaIcons from "react-icons/fa";
 
 const Sidebar = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
 
   const menuToggler = () => {
-    setOpen(true);
+    setOpen(!isOpen);
   };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.sidebar}>
-        <div className={styles.main_toggle_btn_wrap}>
-          <button className={styles.toggle_wrap} onClick={menuToggler}>
-            <FaAlignJustify className={styles.toggle_btn} />
-          </button>
+    
+    <div className={styles.main_wrap}>
+      <div className={styles.toggle_btn_wrap}>
+        <FaIcons.FaAlignLeft className={styles.toggle_icon} onClick={menuToggler} />
+      </div>
+
+ 
+
+    
+
+      <nav className={`${styles['sidebar_wrap']} ${!isOpen && styles.active}`}>
+
+     
+      
+        <div className={styles.close_icon_wrap}>
+          <FaIcons.FaRegTimesCircle className={styles.close_icon} onClick={menuToggler} />
         </div>
-        <div className={styles.profilepic_wrap}>
-          <a href="/" className={styles.profilepic_link_wrap}>
-            <img src={img} className={styles.profilepic} alt="" />
-          </a>
+      
+
+        <div className={styles.img_wrap}>
+          <img src={img} className={styles.img} alt="/" />
         </div>
-        <hr className={styles.list_line} />
+
+        <hr  className={styles.border_line}/>
+
+        
 
         <ul className={styles.ul_wrap}>
-          <li className={styles.list_wrap}>
-            <a className={styles.link} href="/">
-              HOME
+          <li className={styles.li_wrap}>
+            <a href="/" className={styles.menu_item}>
+              Home
             </a>
           </li>
-          <li className={styles.list_wrap}>
-            <div className={styles.link} href="/">
-              ABOUT
-            </div>
-          </li>
-          <li className={styles.list_wrap}>
-            <a className={styles.link} href="/">
-              RESUME
+          <li className={styles.li_wrap}>
+            <a href="/" className={styles.menu_item}>
+              About Me
             </a>
           </li>
-          <li className={styles.list_wrap}>
-            <a className={styles.link} href="/">
-              PORTFOLIO
+          <li className={styles.li_wrap}>
+            <a href="/" className={styles.menu_item}>
+              Portfolio
             </a>
           </li>
-          <li className={styles.list_wrap}>
-            <a className={styles.link} href="/">
-              CONTACT
+          <li className={styles.li_wrap}>
+            <a href="/" className={styles.menu_item}>
+              Resume
             </a>
           </li>
         </ul>
 
-        <div>
-          <Footer />
-        </div>
-      </div>
+       
+     
+      </nav>
+
+      
+    
+    
     </div>
+    
   );
 };
 

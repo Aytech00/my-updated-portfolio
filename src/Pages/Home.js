@@ -1,7 +1,8 @@
 import { React } from "react";
 import styles from "./Home.module.css";
-import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
-import SideBar from "./Components/Sidebar";
+// import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
+import SideBar from "../Components/Sidebar";
+import * as FaIcons from "react-icons/fa";
 
 const Home = () => {
 
@@ -10,7 +11,6 @@ const Home = () => {
       <div className={styles.main_content}>
         <SideBar />
 
-        
         <div className={styles.inner_main_content}>
           <div>
             <div className={styles.title_wrap}>
@@ -28,23 +28,22 @@ const Home = () => {
             </div>
 
             <ul className={styles.icon_wrap}>
-              <li className={styles.linkedin_icon_wrap}>
-                <a href="https://www.linkedin.com/feed/">
-                  <FaLinkedinIn className={styles.linkedin_icon} />
-                </a>
-              </li>
+              <a href="https://www.linkedin.com/feed/">
+                <li className={styles.linkedin_icon_wrap}>
+                  <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
+                </li>
+              </a>
 
-              <li className={styles.twitter_icon_wrap}>
-                <a href="https://twitter.com/Aytechng">
-                  <FaTwitter className={styles.twitter_icon} />
-                </a>
-              </li>
-
-              <li className={styles.github_icon_wrap}>
-                <a href="https://github.com/Aytech00">
-                  <FaGithub className={styles.github_icon} />
-                </a>
-              </li>
+              <a href="https://twitter.com/Aytechng">
+                <li className={styles.twitter_icon_wrap}>
+                  <FaIcons.FaTwitter className={styles.twitter_icon} />
+                </li>
+              </a>
+              <a href="https://github.com/Aytech00">
+                <li className={styles.github_icon_wrap}>
+                  <FaIcons.FaGithub className={styles.github_icon} />
+                </li>
+              </a>
             </ul>
           </div>
         </div>
