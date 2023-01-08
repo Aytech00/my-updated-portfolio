@@ -8,7 +8,8 @@
 }
 
 .toggle_btn_wrap {
-  padding: 15px 17px;
+  padding: 20px 17px;
+  margin-top: 5px;
 
 }
 
@@ -35,12 +36,14 @@
 
 .ul_wrap {
   text-align: center;
-  margin-top: 20px;
+  padding: 8% 3%;
+ margin-top: 5%;
 }
 
 .li_wrap {
   list-style: none;
-  margin: 3rem 0rem;
+  margin: 15% 0%;
+
  
 }
 
@@ -75,6 +78,8 @@
   height: 0;
   border-color: rgb(62, 62, 62);
   margin-top: 15px;
+ 
+  
 }
 
 .menu_item {

@@ -11,65 +11,57 @@ const Sidebar = () => {
   };
 
   return (
-    
     <div className={styles.main_wrap}>
       <div className={styles.toggle_btn_wrap}>
-        <FaIcons.FaAlignLeft className={styles.toggle_icon} onClick={menuToggler} />
+        <FaIcons.FaAlignLeft
+          className={styles.toggle_icon}
+          onClick={menuToggler}
+        />
       </div>
 
- 
-
-    
-
-      <nav className={`${styles['sidebar_wrap']} ${!isOpen && styles.active}`}>
-
-     
-      
+      <nav className={`${styles["sidebar_wrap"]} ${!isOpen && styles.active}`}>
         <div className={styles.close_icon_wrap}>
-          <FaIcons.FaRegTimesCircle className={styles.close_icon} onClick={menuToggler} />
+          <FaIcons.FaRegTimesCircle
+            className={styles.close_icon}
+            onClick={menuToggler}
+          />
         </div>
-      
 
         <div className={styles.img_wrap}>
           <img src={img} className={styles.img} alt="/" />
         </div>
 
-        <hr  className={styles.border_line}/>
-
-        
+        <hr className={styles.border_line} />
 
         <ul className={styles.ul_wrap}>
           <li className={styles.li_wrap}>
             <a href="/" className={styles.menu_item}>
-              Home
+              HOME
             </a>
           </li>
           <li className={styles.li_wrap}>
             <a href="/" className={styles.menu_item}>
-              About Me
+              ABOUT ME
             </a>
           </li>
           <li className={styles.li_wrap}>
             <a href="/" className={styles.menu_item}>
-              Portfolio
+              PORTFOLIO
             </a>
           </li>
           <li className={styles.li_wrap}>
             <a href="/" className={styles.menu_item}>
-              Resume
+              RESUME
+            </a>
+          </li>
+          <li className={styles.li_wrap}>
+            <a href="/" className={styles.menu_item}>
+             CONTACT
             </a>
           </li>
         </ul>
-
-       
-     
       </nav>
-
-      
-    
-    
     </div>
-    
   );
 };
 
