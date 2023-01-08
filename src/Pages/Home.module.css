@@ -18,6 +18,7 @@
   justify-content: center;
   height: 80vh;
   align-items: center;
+  margin-left: 3%;
 
   
 }
@@ -39,7 +40,7 @@
 .text_wrap {
  
   text-align: center;
-  padding: 2% 10%;
+  padding: 1% 14%;
    
 }
 
@@ -144,4 +145,12 @@
     
    
   }
+
+  .text_wrap {
+ 
+  text-align: center;
+  padding: 2% 10%;
+   
+}
+
 }

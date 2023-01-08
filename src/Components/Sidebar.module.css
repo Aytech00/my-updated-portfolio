@@ -84,12 +84,13 @@
 
 .menu_item {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   transition: all 250ms ease-in-out;
   color: whitesmoke;
   padding: 2% 20%;
 
   font-family: var(--primary-font);
+
 }
 
 .menu_item:hover {
