@@ -1,0 +1,162 @@
+.about_main_container {
+  margin-left: 19%;
+  padding: 0px 16px;
+}
+
+.title {
+  color: whitesmoke;
+  margin-bottom: 5%;
+  font-size: 40px;
+}
+
+
+/* .details_main_wrap{} */
+
+
+/* .col {} */
+
+
+.about_img {
+  width: 80%;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+}
+
+.about_sub_title {
+  margin-bottom: 2%;
+  color: #64ffda;
+}
+
+.about_text {
+  width: 65%;
+  color: #ccc;
+  line-height: 2;
+}
+
+.resume_btn_wrap {
+  margin-top: 2%;
+}
+
+.resume_btn {
+  padding: 8px 15px;
+  width: 150px;
+  font-size: 18px;
+  background-color: #64ffda;
+  border: 0;
+  cursor: pointer;
+}
+
+.service_main_wrap {
+  margin-top: 10%;
+  
+}
+
+.service_main_title {
+  color: whitesmoke;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.service_inner_wrap {
+  display: flex;
+  
+  margin-top: 3%;
+}
+
+.service_card {
+  background-color: rgba(148, 150, 144, 0.117);
+  padding: 15px;
+  margin: 0px 2px;
+  
+}
+.service_title {
+  margin-bottom: 5%;
+  color: whitesmoke;
+}
+
+.service_text {
+  color: #b9b5b5;
+}
+
+/* .service_text{
+    width: 50%;
+} */
+
+.testimonial_main_wrap{
+    margin-top: 6%;
+    padding: 8% 1%;
+    
+
+}
+
+.testimonial_title{
+    color: whitesmoke;
+    font-size: 40px
+    
+    
+}
+
+/* .testimonial_wrap{
+    background-color: rgba(234, 233, 233, 0.043);
+    
+} */
+.testimonial_text{
+    width: 65%;
+    margin-top: 2%;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* .testimonial-wrap::after {
+    border-color: #191d2b transparent transparent #191d2b;
+    border-style: solid;
+    border-width: 12px;
+    content: "";
+    left: 30px;
+    position: absolute;
+    top: 100%;
+
+} */
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .about_main_container {
+    margin-left: 3%;
+    padding: 0px 8px;
+  }
+
+  .about_text {
+    width: 95%;
+  }
+
+  .resume_btn_wrap {
+    margin-top: 7%;
+  }
+
+  .service_main_wrap{
+    margin-top: 15%;
+     padding: 7% 0%;
+     margin-right: 6%;
+
+  }
+
+  .service_inner_wrap {
+    flex-direction: column;
+  }
+
+  .service_card {
+    margin-top: 5%;
+    padding: 5%;
+  }
+
+  .testimonial_text{
+    width: 90%;
+  }
+}
+
+

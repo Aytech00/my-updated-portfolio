@@ -1,33 +1,88 @@
 import { React } from "react";
 import styles from "./Home.module.css";
-// import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
-import SideBar from "../Components/Sidebar";
 import * as FaIcons from "react-icons/fa";
+import {motion} from 'framer-motion'
+
+// Animation
+
+const Variant1 = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 2,
+    transition: {
+      delay: 0.3,
+    },
+  },
+};
+
+const Variant2 = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 2,
+    transition:{
+      delay:1,
+    }
+  },
+};
+
+const Variant3 = {
+  hidden: {
+    opacity: 0,
+  },
+
+  visible: {
+    opacity: 2,
+    transition: {
+      delay: 1.5,
+    },
+  },
+};
+
+
 
 const Home = () => {
 
   return (
     <div>
       <div className={styles.main_content}>
-        <SideBar />
-
         <div className={styles.inner_main_content}>
           <div>
-            <div className={styles.title_wrap}>
+            <motion.div
+              variants={Variant1}
+              initial="hidden"
+              animate="visible"
+              className={styles.title_wrap}
+            >
               <h1 className={styles.title}>
                 Hi,I am <span className={styles.name_wrap}>Toluwani</span>
               </h1>
-            </div>
+            </motion.div>
 
-            <div className={styles.text_wrap}>
+            <motion.div
+              variants={Variant2}
+              initial="hidden"
+              animate="visible"
+              className={styles.text_wrap}
+            >
               <p className={styles.text}>
                 I am a frontend web developer. I can provide clean code and
                 pixel perfect design. I also make website more & more
                 interactive with web animations.
               </p>
-            </div>
+            </motion.div>
 
-            <ul className={styles.icon_wrap}>
+            <motion.ul
+              variants={Variant3}
+              initial="hidden"
+              animate="visible"
+              className={styles.icon_wrap}
+            >
               <a href="https://www.linkedin.com/feed/">
                 <li className={styles.linkedin_icon_wrap}>
                   <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
@@ -44,7 +99,7 @@ const Home = () => {
                   <FaIcons.FaGithub className={styles.github_icon} />
                 </li>
               </a>
-            </ul>
+            </motion.ul>
           </div>
         </div>
       </div>
