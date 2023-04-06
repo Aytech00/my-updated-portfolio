@@ -3,30 +3,38 @@ import styles from "./Home.module.css";
 import * as FaIcons from "react-icons/fa";
 import {motion} from 'framer-motion'
 
-// Animation
+// Animation styles
 
 const Variant1 = {
   hidden: {
+    y:70,
     opacity: 0,
+
   },
 
   visible: {
+    y:0,
     opacity: 2,
     transition: {
       delay: 0.3,
+      duration: 0.7,
+
     },
   },
 };
 
 const Variant2 = {
   hidden: {
+    y: 60,
     opacity: 0,
   },
 
   visible: {
-    opacity: 2,
+    y: 0,
+    opacity: 3,
     transition:{
-      delay:1,
+      delay:0.8,
+      duration: 0.7,
     }
   },
 };
@@ -34,13 +42,18 @@ const Variant2 = {
 const Variant3 = {
   hidden: {
     opacity: 0,
+    y:60,
   },
 
   visible: {
     opacity: 2,
+    y:0,
     transition: {
-      delay: 1.5,
-    },
+      delay: 1.2,
+      Type: 'spring',
+      stiffness: '100',
+      duration: 0.7,
+        }
   },
 };
 
@@ -71,7 +84,7 @@ const Home = () => {
               className={styles.text_wrap}
             >
               <p className={styles.text}>
-                I am a frontend web developer. I can provide clean code and
+                I am a Software Engineer. I can provide clean code and
                 pixel perfect design. I also make website more & more
                 interactive with web animations.
               </p>
@@ -87,6 +100,7 @@ const Home = () => {
                 <li className={styles.linkedin_icon_wrap}>
                   <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
                 </li>
+
               </a>
 
               <a href="https://twitter.com/Aytechng">

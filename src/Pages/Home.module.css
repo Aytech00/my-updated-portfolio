@@ -38,7 +38,7 @@
 
 .text {
   font-size: 18px;
-  color: #848a98;
+  color: #cfd0d2;
   line-height: 2;
 
   font-family: var(--primary-font);
@@ -61,7 +61,7 @@
 }
 
 .linkedin_icon {
-  color: #6a7183;
+  color: var(--link);
   font-size: 25px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .twitter_icon {
-  color: #6a7183;
+  color: var(--link);
   font-size: 25px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .github_icon {
-  color: #6a7183;
+  color: var(--link);
   font-size: 25px;
 }
 
@@ -116,6 +116,6 @@
 
   .text_wrap {
     text-align: center;
-    padding: 2% 5%;
+    padding: 2% 3%;
   }
 }

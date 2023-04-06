@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div>
+
         <div className={styles.main_wrap}>
           <div className={styles.toggle_btn_wrap}>
             <FaIcons.FaAlignLeft
@@ -72,7 +72,7 @@ const Sidebar = () => {
             </nav>
           </div>
         </div>
-      </div>
+   
 
       <main>
         <Outlet />
