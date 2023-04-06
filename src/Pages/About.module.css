@@ -33,7 +33,7 @@
   line-height: 2;
 }
 .skill_main_wrap{
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .skill_ul_wrap{
@@ -43,7 +43,7 @@
 .skill_title{
    color: whitesmoke;
   margin-bottom: 18px;
-  font-size: 30px;
+  font-size: 40px;
 }
 .skill_li{
   list-style: none;
@@ -190,6 +190,9 @@
   .resume_btn_wrap {
     margin-top: 15%;
   }
+  .skill_main_wrap{
+  margin-top: 15%;
+}
  .skill_ul_wrap{
   display: flex;
   flex-wrap: wrap;
