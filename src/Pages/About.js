@@ -90,7 +90,7 @@ const About = (props) => {
         in
         className={styles.details_main_wrap}
       >
-        <h2 className={styles.about_sub_title}>My name is Toluwani</h2>
+        <h3 className={styles.about_sub_title}>My name is Toluwani</h3>
         <p className={styles.about_text}>
           I am a Software Engineer with vast experience in building websites,
           web apps, CMS websites and different kinds of softwares. I have got a

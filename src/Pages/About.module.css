@@ -6,7 +6,7 @@
 .title {
   color: whitesmoke;
   margin-bottom: 5%;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 
@@ -43,7 +43,7 @@
 .skill_title{
    color: whitesmoke;
   margin-bottom: 18px;
-  font-size: 40px;
+  font-size: 35px;
 }
 .skill_li{
   list-style: none;
@@ -79,7 +79,7 @@
 
 .service_main_title {
   color: whitesmoke;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 2%;
 
 }
@@ -94,14 +94,14 @@
   background-color: rgba(148, 150, 144, 0.117);
  padding: 2% 3%;
  margin-right: 1%;
- border-radius: 5px;
+ 
   
 }
 
 .service_card_2{
    background-color: rgba(148, 150, 144, 0.117);
  padding: 2% 2%;
-  border-radius: 5px;
+
 
   
   
@@ -144,7 +144,7 @@
 
 .testimonial_title{
     color: whitesmoke;
-    font-size: 40px
+    font-size: 35px
     
     
 }
@@ -178,10 +178,15 @@
 
 
 @media screen and (max-width: 900px) {
+
+  .title{
+    font-size: 30px;
+  }
   .about_main_container {
     margin-left: 3%;
     padding: 0px 8px;
   }
+  
 
   .about_text {
     width: 95%;
@@ -193,6 +198,9 @@
   .skill_main_wrap{
   margin-top: 15%;
 }
+.skill_title{
+  font-size: 30px;
+}
  .skill_ul_wrap{
   display: flex;
   flex-wrap: wrap;
@@ -203,6 +211,9 @@
      padding: 7% 0%;
      margin-right: 6%;
 
+  }
+  .service_main_title{
+    font-size: 30px;
   }
 
   .service_inner_wrap {
@@ -216,6 +227,9 @@
   .service_card_2 {
     margin-top: 5%;
     padding: 5% 5%;
+  }
+  .testimonial_title{
+    font-size: 30px;
   }
 
   .testimonial_text{

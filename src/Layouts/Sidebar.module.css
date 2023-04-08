@@ -54,7 +54,7 @@
   width: 50%;
   border-radius: 50%;
   height: 30%;
-  border: 4px solid rgb(164, 164, 164);
+  border: 5px solid #b6bbc8;
 }
 
 .border_line{
@@ -86,7 +86,7 @@
   text-decoration: none;
   font-size: 18px;
   transition: all 100ms ease-out;
-  color: #6a7183;
+  color: #b6bbc8;
   padding: 2% 20%;
 
   font-family: var(--primary-font);
@@ -115,7 +115,22 @@
   color: rgb(186, 186, 186);
   display: none;
 }
+.border_line_bottom{
+    height: 0;
+  border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+   margin-top: 9rem;
+}
+.footer_wrap{
+  text-align: center;
+ 
+}
 
+.footer_text{
+  color: #b6bbc8;
+  padding: 10px 0px;
+}
 
 /* Mobile */
 

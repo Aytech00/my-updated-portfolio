@@ -161,7 +161,7 @@ const Portfolio = () => {
             <a className={styles.portfolio_link} href="/">
               <h2>NASA API PROJECT</h2>
             </a>
-            <p className={styles.portfolio_desc}>Built with Html, CSS adn Vanilla javacript.</p>
+            <p className={styles.portfolio_desc}>Built with Html, CSS and Vanilla Javascript.</p>
           </div>
           {/* <div className={styles.inner_portfolio_wrap}>
           <img className={styles.portfolio_img} src={img1} alt="" />
