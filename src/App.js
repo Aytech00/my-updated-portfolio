@@ -9,6 +9,8 @@ import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume"
 import About from './Pages/About'
 
+// Create routes from elements
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Sidebar />}>

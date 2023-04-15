@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Button = () => {
+function Button() {
   return (
-    <button type={props.type}>
-        {props.children}
-    </button>
+    <div>Button</div>
   )
 }
 

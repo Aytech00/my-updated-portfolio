@@ -73,7 +73,7 @@ const Home = () => {
               className={styles.title_wrap}
             >
               <h1 className={styles.title}>
-                Hi,I am <span className={styles.name_wrap}>Toluwani</span>
+                Hi,I am <span className={styles.name_wrap}>Ayo</span>
               </h1>
             </motion.div>
 
@@ -84,8 +84,8 @@ const Home = () => {
               className={styles.text_wrap}
             >
               <p className={styles.text}>
-                I am a Software Engineer. I can provide clean code and
-                pixel perfect design. I also make website more & more
+                I am a Software Engineer. I provide functional websites with
+                perfect design. I also make website
                 interactive with web animations.
               </p>
             </motion.div>

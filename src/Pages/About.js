@@ -1,28 +1,23 @@
 import React from "react";
 import styles from "./About.module.css";
-import {motion} from 'framer-motion'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen, faCode } from "@fortawesome/free-solid-svg-icons";
-
+import { motion } from "framer-motion";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPen, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Variant1 = {
   hidden: {
-    y: '-100vh',
-    
+    y: "-100vh",
   },
 
   visible: {
-    y: '0vh',
-    transition:{
-      type: 'spring',
+    y: "0vh",
+    transition: {
+      type: "spring",
       stiffness: 90,
-      delay: 0.3
-    }
-  }
+      delay: 0.3,
+    },
+  },
 };
-
-
-
 
 const Variant2 = {
   hidden: {
@@ -40,33 +35,31 @@ const Variant2 = {
   },
 };
 
-const Variant3 = {
-  hidden: {
-    y: 70,
-    opacity: 0,
-  },
+// const Variant3 = {
+//   hidden: {
+//     y: 70,
+//     opacity: 0,
+//   },
 
-  visible: {
-    y: 0,
-    opacity: 2,
-    transition: {
-      delay: 1.6,
-      duration: 0.7,
-    },
-  },
-};
-
+//   visible: {
+//     y: 0,
+//     opacity: 2,
+//     transition: {
+//       delay: 1.6,
+//       duration: 0.7,
+//     },
+//   },
+// };
 
 const Variant4 = {
   hidden: {
     x: "100vw",
   },
 
-
   visible: {
-    x:0,
+    x: 0,
     transition: {
-      delay: 1.8,   
+      delay: 1.7,
     },
   },
 };
@@ -90,15 +83,16 @@ const About = (props) => {
         in
         className={styles.details_main_wrap}
       >
-        <h3 className={styles.about_sub_title}>My name is Toluwani</h3>
+        <h3 className={styles.about_sub_title}>Hi! My name is Ayokunumi</h3>
         <p className={styles.about_text}>
-          I am a Software Engineer with vast experience in building websites,
-          web apps, CMS websites and different kinds of softwares. I have got a
-          unique set of skills that allows me to work on every aspect of a
-          wesbite project. With proficiency in multiple frontend stacks, I am
-          able to tackle any challenge that comes my way. I am also a strong
-          communicator, able to work effectively in teams and collaborate with
-          others to deliver high-quality projects.
+          I specializes in creating visually
+          appealing and highly functional user interfaces for websites and web
+          applications. I am able to interpret design mockups and translate them
+          into functional user interfaces, adept at troubleshooting and
+          resolving issues related to frontend development. In addition to
+          technical skills, i possess strong communication and collaboration
+          skills, and i'm able to work closely with other team members to
+          achieve project goals.
         </p>
 
         <div className={styles.skill_main_wrap}>
@@ -109,11 +103,13 @@ const About = (props) => {
             <li className={styles.skill_li}>SASS</li>
             <li className={styles.skill_li}> Bootstrap</li>
             <li className={styles.skill_li}>Tailwindcss</li>
+            <li className={styles.skill_li}>Styled Component</li>
           </ul>
 
           <ul className={styles.skill_ul_wrap}>
             <li className={styles.skill_li}>Javascript</li>
             <li className={styles.skill_li}>Material-UI</li>
+
             <li className={styles.skill_li}>ReactJS</li>
             <li className={styles.skill_li}>Redux</li>
             <li className={styles.skill_li}>Nextjs</li>
@@ -132,7 +128,7 @@ const About = (props) => {
 
       {/* Service */}
 
-      <motion.div
+      {/* <motion.div
         variants={Variant3}
         initial="hidden"
         animate="visible"
@@ -143,24 +139,30 @@ const About = (props) => {
         <div className={styles.service_inner_wrap}>
           <div className={styles.service_card_1}>
             <FontAwesomeIcon icon={faPen} className={styles.design_icon} />
-            <h3 className={styles.service_title}>Web design</h3>
+            <h3 className={styles.service_title}>Web development</h3>
 
             <p className={styles.service_text}>
-              Web Design Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Autem tenetur ratione quod.
+              I have in-depth knowledge and expertise in designing visually
+              appealing and user-friendly websites. With my strong understanding
+              of the latest web design trends and technologies, i'm able to
+              create responsive and mobile-friendly websites that can adapt to
+              different screen sizes and devices
             </p>
           </div>
 
           <div className={styles.service_card_2}>
             <FontAwesomeIcon icon={faCode} className={styles.dev_icon} />
-            <h3 className={styles.service_title}>Web development</h3>
+            <h3 className={styles.service_title}>Web design</h3>
             <p className={styles.service_text}>
-              Web Design Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Autem tenetur ratione quod.
+              I have in-depth knowledge and expertise in designing visually
+              appealing and user-friendly websites. With my strong understanding
+              of the latest web design trends and technologies, i'm able to
+              create responsive and mobile-friendly websites that can adapt to
+              different screen sizes and devices
             </p>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         variants={Variant4}
@@ -173,7 +175,7 @@ const About = (props) => {
         <div className={styles.testimonial_wrap}>
           <p className={styles.testimonial_text}>
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-            expedita........""
+            expedita........"
           </p>
         </div>
       </motion.div>

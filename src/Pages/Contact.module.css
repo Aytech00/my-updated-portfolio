@@ -1,0 +1,103 @@
+.contact_main_container {
+  margin-left: 20%;
+  margin-top: 3%;
+}
+
+
+.contact_title{
+  color: whitesmoke;
+  margin-bottom: 5%;
+}
+
+.phone_wrap{
+  margin-bottom: 5%;
+  background-color: rgba(148, 150, 144, 0.117);
+  width: 700px;
+  padding: 3% ;
+  border-radius: 4px;
+}
+
+.phone_inner_wrap{
+  display: flex;
+}
+
+.inner_phone_icon_wrap{
+  margin-right: 15px;
+  border: 1px solid rgb(133, 133, 133);
+  padding: 15px;
+}
+
+.phone_title{
+  color: rgb(240, 239, 239);
+  margin-bottom: 7px;
+  font-size: 25px;
+}
+
+.phone_icon{
+  font-size: 40px;
+  color: rgb(240, 239, 239);
+}
+
+
+.phone_text{
+    color: rgb(240, 239, 239);
+
+}
+.email_wrap{
+  margin-bottom: 5%;
+  background-color: rgba(148, 150, 144, 0.117);
+  width: 700px;
+  padding: 3% ;
+    border-radius: 4px;
+
+}
+
+.email_inner_wrap{
+  display: flex;
+}
+
+.inner_email_icon_wrap{
+  margin-right: 15px;
+  border: 1px solid rgb(133, 133, 133);
+  padding: 15px;
+}
+
+.email_title{
+  color: rgb(240, 239, 239);
+  margin-bottom: 7px;
+  font-size: 25px;
+}
+
+.email_icon{
+  font-size: 40px;
+  color: rgb(240, 239, 239);
+}
+
+.email_text{
+  color: rgb(240, 239, 239);
+}
+
+
+@media screen and (max-width:900px){
+
+  .contact_main_container{
+    margin-left: 4%;
+    padding: 5%;
+  }
+
+  .contact_title{
+    margin-bottom: 10%;
+  }
+
+  .phone_wrap{
+    width: 335px;
+    padding: 8%;
+    margin-bottom: 8%;
+  }
+  .email_wrap{
+    width: 335px;
+       padding: 8%;
+   
+  }
+  
+}
