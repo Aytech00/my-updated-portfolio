@@ -43,7 +43,7 @@
   border-top-right-radius: 18px;
   border-bottom-left-radius: 18px;
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* .portfolio_img_wrap{

@@ -24,7 +24,7 @@
 
 .inner_phone_icon_wrap{
   margin-right: 15px;
-  border: 1px solid rgb(133, 133, 133);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px;
 }
 
@@ -59,7 +59,7 @@
 
 .inner_email_icon_wrap{
   margin-right: 15px;
-  border: 1px solid rgb(133, 133, 133);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px;
 }
 
@@ -82,7 +82,7 @@
 @media screen and (max-width:900px){
 
   .contact_main_container{
-    margin-left: 4%;
+    margin-left: 3%;
     padding: 2%;
   }
 
@@ -92,12 +92,12 @@
 
   .phone_wrap{
     width: 335px;
-    padding: 8%;
+    padding: 7%;
     margin-bottom: 8%;
   }
   .email_wrap{
     width: 335px;
-       padding: 8%;
+       padding: 7%;
    
   }
   
