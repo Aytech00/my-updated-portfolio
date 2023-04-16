@@ -146,10 +146,10 @@ const Portfolio = () => {
           <div className={styles.inner_portfolio_wrap}>
             <img className={styles.portfolio_img} src={img9} alt="" />
             <a className={styles.portfolio_link} href="/">
-              <h2>Dapp</h2>
+              <h2>Magnolia</h2>
             </a>
             <p className={styles.portfolio_desc}>
-              A real estate app built with Nextjs and CSS.
+              A real estate website built with Nextjs and CSS.
             </p>
           </div>
           <div className={styles.inner_portfolio_wrap}>
@@ -158,7 +158,7 @@ const Portfolio = () => {
               <h2>Annex</h2>
             </a>
             <p className={styles.portfolio_desc}>
-              An ecommerce website built with WordPress
+              An Vamp ecommerce website built with WordPress
             </p>
           </div>
           <div className={styles.inner_portfolio_wrap}>
@@ -168,7 +168,7 @@ const Portfolio = () => {
             </a>
             <p className={styles.portfolio_desc}>
               {" "}
-              Built with HTML, SASS and Vanilla JS.
+              A QR code generator built with HTML, SASS and Vanilla JS.
             </p>
           </div>
         </motion.div>

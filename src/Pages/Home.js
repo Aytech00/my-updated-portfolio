@@ -85,8 +85,8 @@ const Home = () => {
             >
               <p className={styles.text}>
                 I am a Software Engineer. I provide functional websites with
-                perfect design. I also make website
-                interactive with web animations.
+                perfect design. I also make website interactive with web
+                animations.
               </p>
             </motion.div>
 
@@ -96,19 +96,26 @@ const Home = () => {
               animate="visible"
               className={styles.icon_wrap}
             >
-              <a href="https://www.linkedin.com/feed/">
+              <a
+                target="_blank
+              "
+                href="https://www.linkedin.com/in/faseesin-ayokunumi/"
+              >
                 <li className={styles.linkedin_icon_wrap}>
                   <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
                 </li>
-
               </a>
 
-              <a href="https://twitter.com/Aytechng">
+              <a target="_blank" href="https://twitter.com/Aytechng">
                 <li className={styles.twitter_icon_wrap}>
                   <FaIcons.FaTwitter className={styles.twitter_icon} />
                 </li>
               </a>
-              <a href="https://github.com/Aytech00">
+              <a
+                target="_blank
+              "
+                href="https://github.com/Aytech00"
+              >
                 <li className={styles.github_icon_wrap}>
                   <FaIcons.FaGithub className={styles.github_icon} />
                 </li>
