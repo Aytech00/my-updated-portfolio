@@ -85,14 +85,13 @@ const About = (props) => {
       >
         <h3 className={styles.about_sub_title}>Hi! My name is Ayokunumi</h3>
         <p className={styles.about_text}>
-          I specializes in creating visually
-          appealing and highly functional user interfaces for websites and web
-          applications. I am able to interpret design mockups and translate them
-          into functional user interfaces, adept at troubleshooting and
-          resolving issues related to frontend development. In addition to
-          technical skills, i possess strong communication and collaboration
-          skills, and i'm able to work closely with other team members to
-          achieve project goals.
+          I specializes in creating visually appealing and highly functional
+          user interfaces for websites and web applications. I am able to
+          interpret design mockups and translate them into functional user
+          interfaces, adept at troubleshooting and resolving issues related to
+          frontend development. In addition to technical skills, i possess
+          strong communication and collaboration skills, and i'm able to work
+          closely with other team members to achieve project goals.
         </p>
 
         <div className={styles.skill_main_wrap}>
@@ -174,8 +173,8 @@ const About = (props) => {
 
         <div className={styles.testimonial_wrap}>
           <p className={styles.testimonial_text}>
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-            expedita........"
+            "Ayo was swift with job given, Understood the job and delivered as
+            expected. Job welldone!"
           </p>
         </div>
       </motion.div>

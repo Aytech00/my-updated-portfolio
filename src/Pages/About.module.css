@@ -72,7 +72,7 @@
   
 }
 
-.service_main_wrap {
+/* .service_main_wrap {
   margin-top: 7%;
   
   
@@ -130,7 +130,7 @@
 .service_text {
   color: #b9b5b5;
   line-height: 2;
-}
+} */
 
 /* .service_text{
     width: 50%;
@@ -207,7 +207,7 @@
   flex-wrap: wrap;
   
 }
-  .service_main_wrap{
+  /* .service_main_wrap{
     margin-top: 15%;
      padding: 7% 0%;
      margin-right: 6%;
@@ -228,9 +228,15 @@
   .service_card_2 {
     margin-top: 5%;
     padding: 5% 5%;
+  } */
+
+  .testimonial_main_wrap{
+    margin-bottom: 10%;
+    padding: 10% 1%;
   }
   .testimonial_title{
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
   }
 
   .testimonial_text{
