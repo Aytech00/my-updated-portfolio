@@ -40,7 +40,7 @@ const Variant2 = {
 const Contact = () => {
   
   return (
-    <div className={Styles.contact_main_container}>
+    <div className={ ` ${Styles.contact_main_container} font-main`}>
       <h1 className={Styles.contact_title}>CONTACT ME</h1>
 
       <motion.div variants={Variant1} initial="hidden" animate="visible" className={Styles.phone_wrap}>

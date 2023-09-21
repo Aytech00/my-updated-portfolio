@@ -1,7 +1,7 @@
 :root {
   --primary: #0b1628;
   --secondary: #081322;
-  --link: #64ffda;
+   --link: #64ffdbdb;
   --primary-font: "Calibre", "Inter", "San Francisco", "SF Pro Text",
     -apple-system, system-ui, sans-serif;
 }
@@ -109,6 +109,7 @@
 
   .title {
     color: white;
+    font-size: 30px;
   
     
   }

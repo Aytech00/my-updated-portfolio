@@ -35,7 +35,7 @@ const Sidebar = () => {
               />
             </div>
 
-            <div className="flex justify-center  mb-6 py-7 ">
+            <div className="flex justify-center  mb-6 lg:py-7 ">
               <img
                 src={img}
                 className="w-[150px]  border-[3px] border-[#ccccccde] rounded-full h-[155px]"

@@ -4,20 +4,6 @@ import { motion } from "framer-motion";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPen, faCode } from "@fortawesome/free-solid-svg-icons";
 
-const Variant1 = {
-  hidden: {
-    y: "-100vh",
-  },
-
-  visible: {
-    y: "0vh",
-    transition: {
-      type: "spring",
-      stiffness: 90,
-      delay: 0.3,
-    },
-  },
-};
 
 const Variant2 = {
   hidden: {
@@ -70,14 +56,12 @@ const About = (props) => {
   document.title = " About me "
   return (
     <div className={ ` ${styles.about_main_container} font-main`}>
-      <motion.h1
-        variants={Variant1}
-        initial="hidden"
-        animate="visible"
+      <h1
+      
         className={styles.title}
       >
         ABOUT ME
-      </motion.h1>
+      </h1>
 
       <motion.div
         variants={Variant2}

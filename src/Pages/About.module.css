@@ -179,11 +179,11 @@
   .about_text {
     width: 100%;
     word-break: break-all;
+    line-height: 2.7;
+    font-size: 16px;
   }
 
-  .resume_btn_wrap {
-    margin-top: 15%;
-  }
+
   .skill_main_wrap{
   margin-top: 15%;
 }
@@ -194,6 +194,10 @@
   display: flex;
   flex-wrap: wrap;
   
+}
+
+.skill_li{
+  font-size: 16px;
 }
   /* .service_main_wrap{
     margin-top: 15%;
