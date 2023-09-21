@@ -1,5 +1,5 @@
 .contact_main_container {
-  margin-left: 20%;
+padding: 6% 5%;
   margin-top: 3%;
 }
 
@@ -8,6 +8,7 @@
   color: whitesmoke;
   margin-bottom: 5%;
   font-size: 35px;
+  font-weight: 700;
 }
 
 .phone_wrap{
@@ -36,7 +37,7 @@
 
 .phone_icon{
   font-size: 40px;
-  color: rgb(240, 239, 239);
+ color: rgba(240, 239, 239, 0.726);
 }
 
 
@@ -71,7 +72,7 @@
 
 .email_icon{
   font-size: 40px;
-  color: rgb(240, 239, 239);
+ color: rgba(240, 239, 239, 0.726);
 }
 
 .email_text{
@@ -82,21 +83,22 @@
 @media screen and (max-width:900px){
 
   .contact_main_container{
-    margin-left: 3%;
-    padding: 2%;
+
+    padding: 6% 5%;
   }
 
   .contact_title{
     margin-bottom: 10%;
+    
   }
 
   .phone_wrap{
-    width: 335px;
+    width: 100%;
     padding: 7%;
     margin-bottom: 8%;
   }
   .email_wrap{
-    width: 335px;
+    width: 100%;
        padding: 7%;
    
   }

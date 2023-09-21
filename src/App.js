@@ -4,10 +4,11 @@ import {Route, RouterProvider, createRoutesFromElements, createBrowserRouter} fr
 // Pages
 import Sidebar from "./Layouts/Sidebar";
 import Home from "./Pages/Home";
-import Portfolio from './Pages/Portfolio'
+import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume"
 import About from './Pages/About'
+import Blog from "./Pages/blog";
 
 // Create routes from elements
 
@@ -16,9 +17,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<Sidebar />}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/Portfolio" element={<Portfolio />} />
+      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/resume" element={<Resume />} />
+      <Route path="/blog" element={<Blog />} />
     </Route>
   )
 );

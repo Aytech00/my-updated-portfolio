@@ -12,10 +12,10 @@
 
 .inner_main_content {
   display: flex;
-  justify-content: center;
-  height: 80vh;
   align-items: center;
-  margin-left: 3%;
+  height: 70vh;
+
+  
 }
 
 .title_wrap {
@@ -25,6 +25,7 @@
 .title {
   color: white;
   font-size: 50px;
+  font-weight: 700;
 }
 
 .name_wrap {
@@ -37,7 +38,7 @@
 }
 
 .text {
-  font-size: 18px;
+  font-size: 17px;
   color: #cfd0d2;
   line-height: 2;
 
@@ -61,7 +62,7 @@
 }
 
 .linkedin_icon {
-  color: var(--link);
+  color: whitesmoke;
   font-size: 25px;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .twitter_icon {
-  color: var(--link);
+  color: whitesmoke;
   font-size: 25px;
 }
 
@@ -91,24 +92,25 @@
 }
 
 .github_icon {
-  color: var(--link);
+   color: whitesmoke;
   font-size: 25px;
 }
 
 /* Mobile */
 @media screen and (max-width: 1189px) {
   .inner_main_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    height: 70vh;
-  }
+  display: flex;
+  align-items: center;
+  height: 50vh;
+
+  
+}
+
 
   .title {
     color: white;
-    font-size: 38px;
-    padding: 0px 18px;
+  
+    
   }
 
   .text {
@@ -116,7 +118,7 @@
   }
 
   .text_wrap {
-    text-align: center;
-    padding: 2% 5%;
+     padding: 1% 7%;
+  
   }
 }

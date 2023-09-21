@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
 
   return (
-    <>
+    <div className="md:grid md:grid-cols-sidebar   ">
       <div className={styles.main_wrap}>
         <div className={styles.toggle_btn_wrap}>
           <FaIcons.FaAlignLeft
@@ -23,7 +23,7 @@ const Sidebar = () => {
           />
         </div>
 
-        <div className={styles.container}>
+        <div className={ ` ${styles.container} font-main`}>
           <nav
             className={`${styles["sidebar_wrap"]} ${!isOpen && styles.active}`}
           >
@@ -35,8 +35,12 @@ const Sidebar = () => {
               />
             </div>
 
-            <div className={styles.img_wrap}>
-              <img src={img} className={styles.img} alt="/" />
+            <div className="flex justify-center  mb-6 py-7 ">
+              <img
+                src={img}
+                className="w-[150px]  border-[3px] border-[#ccccccde] rounded-full h-[155px]"
+                alt="/"
+              />
             </div>
 
             <hr className={styles.border_line} />
@@ -44,36 +48,31 @@ const Sidebar = () => {
             <ul className={styles.ul_wrap}>
               <li className={styles.li_wrap}>
                 <Link to="/" className={styles.menu_item}>
-                  HOME
+                  Home
                 </Link>
               </li>
               <li className={styles.li_wrap}>
                 <Link to="/about" className={styles.menu_item}>
-                  ABOUT ME
+                  About me
                 </Link>
               </li>
               <li className={styles.li_wrap}>
                 <Link to="/Portfolio" className={styles.menu_item}>
-                  PORTFOLIO
+                  My Portfolio
                 </Link>
               </li>
 
               <li className={styles.li_wrap}>
                 <Link to="/contact" className={styles.menu_item}>
-                  CONTACT
+                  Contact
                 </Link>
               </li>
               <li className={styles.li_wrap}>
-                <Link to="/resume" className={styles.menu_item}>
-                  BLOG
+                <Link to="/blog" className={styles.menu_item}>
+                  Blog
                 </Link>
               </li>
             </ul>
-
-            <hr className={styles.border_line_bottom} />
-            <footer className={styles.footer_wrap}>
-              <p className={styles.footer_text}>© Ayokunumi 2023</p>
-            </footer>
           </nav>
         </div>
       </div>
@@ -81,7 +80,7 @@ const Sidebar = () => {
       <main>
         <Outlet />
       </main>
-    </>
+    </div>
   );
 };
 

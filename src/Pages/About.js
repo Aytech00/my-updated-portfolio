@@ -65,8 +65,11 @@ const Variant4 = {
 };
 
 const About = (props) => {
+
+
+  document.title = " About me "
   return (
-    <div className={styles.about_main_container}>
+    <div className={ ` ${styles.about_main_container} font-main`}>
       <motion.h1
         variants={Variant1}
         initial="hidden"
@@ -83,9 +86,9 @@ const About = (props) => {
         in
         className={styles.details_main_wrap}
       >
-        <h3 className={styles.about_sub_title}>Hi! My name is Ayokunumi</h3>
+        <h3 className={styles.about_sub_title}>Hi! My name is Ayo</h3>
         <p className={styles.about_text}>
-          I specializes in creating visually appealing and highly functional
+          I specialize in creating visually appealing and highly functional
           user interfaces for websites and web applications. I am able to
           interpret design mockups and translate them into functional user
           interfaces, adept at troubleshooting and resolving issues related to
@@ -95,9 +98,9 @@ const About = (props) => {
         </p>
 
         <div className={styles.skill_main_wrap}>
-          <h3 className={styles.skill_title}>SKILLS</h3>
+          <h3 className={styles.skill_title}>STACKS</h3>
           <ul className={styles.skill_ul_wrap}>
-            <li className={styles.skill_li}>Html</li>
+           
             <li className={styles.skill_li}>CSS</li>
             <li className={styles.skill_li}>SASS</li>
             <li className={styles.skill_li}> Bootstrap</li>
@@ -106,16 +109,17 @@ const About = (props) => {
           </ul>
 
           <ul className={styles.skill_ul_wrap}>
-            <li className={styles.skill_li}>Javascript</li>
+            <li className={styles.skill_li}>Javascript (ES6+)</li>
             <li className={styles.skill_li}>Material-UI</li>
 
-            <li className={styles.skill_li}>ReactJS</li>
+            <li className={styles.skill_li}>React.js</li>
             <li className={styles.skill_li}>Redux</li>
-            <li className={styles.skill_li}>Nextjs</li>
+            <li className={styles.skill_li}>Next.js</li>
+            <li className={styles.skill_li}>Git</li>
           </ul>
           <ul className={styles.skill_ul_wrap}>
             <li className={styles.skill_li}>WordPress</li>
-
+            <li className={styles.skill_li}>Webflow</li>
             <li className={styles.skill_li}>Shopify</li>
           </ul>
         </div>

@@ -63,8 +63,8 @@ const Home = () => {
 
   return (
     <div>
-      <div className={styles.main_content}>
-        <div className={styles.inner_main_content}>
+      <div className="py-20 ">
+        <div className={ ` ${styles.inner_main_content} font-main `}>
           <div>
             <motion.div
               variants={Variant1}
@@ -99,6 +99,7 @@ const Home = () => {
               <a
                 target="_blank
               "
+                rel="noreferrer"
                 href="https://www.linkedin.com/in/faseesin-ayokunumi/"
               >
                 <li className={styles.linkedin_icon_wrap}>
@@ -106,7 +107,11 @@ const Home = () => {
                 </li>
               </a>
 
-              <a target="_blank" href="https://twitter.com/Aytechng">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/Aytechng"
+              >
                 <li className={styles.twitter_icon_wrap}>
                   <FaIcons.FaTwitter className={styles.twitter_icon} />
                 </li>
