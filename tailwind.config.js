@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        sidebar: "270px 1150px", // 👈 for sidebar layout. adds grid-cols-sidebar class
+        sidebar: "270px 1150px",
+        xlsidebar: "270px 1640px", // 👈 for sidebar layout. adds grid-cols-sidebar class
       },
       gridTemplateRows: {
         header: "64px auto", // 👈 for the navbar layout. adds grid-rows-header class

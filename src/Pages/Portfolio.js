@@ -9,6 +9,9 @@ import img7 from "../Assets/letusrecon.png";
 
 import img9 from '../Assets/magnolia.png'
 import img10 from '../Assets/annex.png'
+import img11 from '../Assets/nurse.png'
+
+
 
 import {BsBoxArrowUpRight} from 'react-icons/bs'
 
@@ -27,16 +30,23 @@ const PORTFOLIO_DATA = [
     link: "https://www.letusrecon.com/",
     img: img7,
   },
-  { id: 6, title: "AnnexVape", link: "https://annexvape.com", img: img10 },
+  { id: 4, title: "AnnexVape", link: "https://annexvape.com", img: img10 },
   {
-    id: 4,
+    id: 5,
+    title: "Nursewithlight",
+    link: "https://nursingwithlight.com/",
+    img: img11,
+  },
+  {
+    id: 6,
     title: "Mognolia Party",
     link: "https://magnoliaparty.com/",
     img: img9,
   },
-  { id: 5, title: "Ellise", link: "https://elise.netlify.app", img: img4 },
+
   { id: 7, title: "Zyteon", link: "https://zyteon.com", img: img2 },
   { id: 8, title: "Inksea", link: "https://inksea.io", img: img3 },
+  { id: 9, title: "Ellise", link: "https://elise.netlify.app", img: img4 },
 ];
 
 
@@ -44,20 +54,25 @@ const PORTFOLIO_DATA = [
 
 const Portfolio = () => {
   return (
-    <div className=" py-20 px-10  font-main">
+    <div className=" py-7 md:py-20 px-10  font-main">
+      <div className="mb-10">
+        <h2 className="text-slate-50 text-2xl  md:text-3xl font-semibold">PORTFOLIO</h2>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {PORTFOLIO_DATA.map((item) => (
           <div key={item.id} className="mb-14">
-            <img
-              className=" w-full sm:w-full md:w-[300px] lg:w-[300px] border-[1px] rounded-sm border-slate-400 mb-4"
-              src={item.img}
-              alt=""
-            />
+            <div className="">
+              <img
+                className=" w-full sm:w-full md:w-[300px] lg:w-[300px] border-2 border-[#cccccc20]  rounded-sm shadow-lg mb-4"
+                src={item.img}
+                alt=""
+              />
+            </div>
             <h4 className="text-slate-100 text-sm mb-5">{item.title}</h4>
             <a target="_blank" rel="noreferrer" href={item.link}>
               <button className="border-0 flex items-center  rounded-md text-sm  text-[#64ffda]  ">
                 View project
-                <BsBoxArrowUpRight className=" ml-2"/>
+                <BsBoxArrowUpRight className=" ml-2" />
               </button>
             </a>
           </div>

@@ -37,18 +37,18 @@ const Variant2 = {
 //   },
 // };
 
-const Variant4 = {
-  hidden: {
-    x: "100vw",
-  },
+// const Variant4 = {
+//   hidden: {
+//     x: "100vw",
+//   },
 
-  visible: {
-    x: 0,
-    transition: {
-      delay: 1.7,
-    },
-  },
-};
+//   visible: {
+//     x: 0,
+//     transition: {
+//       delay: 1.7,
+//     },
+//   },
+// };
 
 const About = (props) => {
 
@@ -151,7 +151,7 @@ const About = (props) => {
         </div>
       </motion.div> */}
 
-      <motion.div
+      {/* <motion.div
         variants={Variant4}
         initial="hidden"
         animate="visible"
@@ -165,7 +165,7 @@ const About = (props) => {
             expected. Job welldone!"
           </p>
         </div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

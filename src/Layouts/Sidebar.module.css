@@ -6,13 +6,17 @@
 
 .toggle_btn_wrap {
   padding: 20px 17px;
-  margin-top: 5px;
+ 
 }
 
 .toggle_icon {
-color: var(--link);  font-size: 30px;
+color: whitesmoke; 
+ font-size: 30px;
   cursor: pointer;
+  
 }
+
+
 
 /* .main_wra{
 
@@ -39,6 +43,7 @@ color: var(--link);  font-size: 30px;
 .sidebar_wrap.active {
   left: -100%;
   transition: 300ms;
+  background-color:#101e37 ;
 }
 
 .img_wrap {
@@ -102,7 +107,7 @@ color: var(--link);  font-size: 30px;
 }
 
 .close_icon {
-  color: var(--link);
+
   font-size: 30px;
   margin-right: 10px;
   cursor: pointer;

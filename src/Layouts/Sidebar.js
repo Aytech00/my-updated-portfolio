@@ -14,20 +14,22 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="md:grid md:grid-cols-sidebar   ">
+    <div className="md:grid md:grid-cols-sidebar  lg:grid-cols-sidebar 2xl:grid-cols-xlsidebar  ">
       <div className={styles.main_wrap}>
-        <div className={styles.toggle_btn_wrap}>
+        <div className={` ${styles.toggle_btn_wrap} bg-[#1d2c4587]  md:bg-transparent `}>
           <FaIcons.FaAlignLeft
-            className={styles.toggle_icon}
+            className={`${styles.toggle_icon} text-slate-50`}
             onClick={menuToggler}
           />
         </div>
 
-        <div className={ ` ${styles.container} font-main`}>
+        <div className={` ${styles.container} font-main`}>
           <nav
-            className={`${styles["sidebar_wrap"]} ${!isOpen && styles.active}`}
+            className={`${styles["sidebar_wrap"]} ${
+              !isOpen ? styles.active : ""
+            } `}
           >
-            <div className={styles.close_icon_wrap}>
+            <div className={` ${styles.close_icon_wrap} text-slate-50`}>
               <FontAwesomeIcon
                 className={styles.close_icon}
                 onClick={menuToggler}
@@ -38,7 +40,7 @@ const Sidebar = () => {
             <div className="flex justify-center  mb-6 lg:py-7 ">
               <img
                 src={img}
-                className="w-[150px]  border-[3px] border-[#ccccccde] rounded-full h-[155px]"
+                className="w-[155px]  border-[4px] border-slate-200 rounded-full h-[160px]"
                 alt="/"
               />
             </div>
