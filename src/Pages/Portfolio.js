@@ -17,7 +17,7 @@ import {BsBoxArrowUpRight} from 'react-icons/bs'
 
 
 const PORTFOLIO_DATA = [
-  { id: 1, title: "CrypTix", link: "https://www.cryptixnft.io/", img: img1 },
+  { id: 1, title: "CrypTix Ticket Creator", link: "https://www.cryptixnft.io/", img: img1 },
   {
     id: 2,
     title: "CrypTix Marketplace",
@@ -33,7 +33,7 @@ const PORTFOLIO_DATA = [
   { id: 4, title: "AnnexVape", link: "https://annexvape.com", img: img10 },
   {
     id: 5,
-    title: "Nursewithlight",
+    title: "Nursingwithlight",
     link: "https://nursingwithlight.com/",
     img: img11,
   },

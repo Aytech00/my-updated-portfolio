@@ -70,7 +70,7 @@ const About = (props) => {
         in
         className={styles.details_main_wrap}
       >
-        <h3 className={styles.about_sub_title}>Hi! My name is Ayo</h3>
+        <h3 className={styles.about_sub_title}> My name is Faseesin Ayokunumi</h3>
         <p className={styles.about_text}>
           I specialize in creating visually appealing and highly functional
           user interfaces for websites and web applications. I am able to
@@ -82,7 +82,7 @@ const About = (props) => {
         </p>
 
         <div className={styles.skill_main_wrap}>
-          <h3 className={styles.skill_title}>STACKS</h3>
+          <h3 className={styles.skill_title}>MY STACKS</h3>
           <ul className={styles.skill_ul_wrap}>
            
             <li className={styles.skill_li}>CSS</li>
