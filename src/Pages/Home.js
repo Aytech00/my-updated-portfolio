@@ -64,7 +64,7 @@ const Home = () => {
   return (
     <div>
       <div className="py-20 ">
-        <div className={ ` ${styles.inner_main_content} font-main `}>
+        <div className={ ` flex justify-center items-center h-[60vh]   font-main `}>
           <div>
             <motion.div
               variants={Variant1}

@@ -40,7 +40,8 @@
 }
 
 .skill_ul_wrap{
-  display: flex;
+  display: grid;
+ 
   
 }
 .skill_title{
@@ -55,8 +56,8 @@
   font-size: 14px;
   color: #64ffda;
   border: 1px solid #64ffdb72;
-  padding: 3px 10px;
-  border-radius: 3px;
+  padding: 5px 10px;
+  border-radius: 20px;
   
 }
 

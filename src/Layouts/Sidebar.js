@@ -13,10 +13,19 @@ const Sidebar = () => {
     setOpen(!isOpen);
   };
 
+  const handleClose = ()=> {
+
+    console.log(isOpen);
+setOpen(!isOpen)
+ 
+  }
+
   return (
     <div className="md:grid md:grid-cols-sidebar  lg:grid-cols-sidebar 2xl:grid-cols-xlsidebar  ">
       <div className={styles.main_wrap}>
-        <div className={` ${styles.toggle_btn_wrap} bg-[#1d2c4587]  md:bg-transparent `}>
+        <div
+          className={` ${styles.toggle_btn_wrap} bg-[#1d2c4587]  md:bg-transparent `}
+        >
           <FaIcons.FaAlignLeft
             className={`${styles.toggle_icon} text-slate-50`}
             onClick={menuToggler}
@@ -37,39 +46,39 @@ const Sidebar = () => {
               />
             </div>
 
-            <div className="flex justify-center  mb-6 lg:py-7 ">
+            {/* <div className="flex justify-center  mb-6 lg:py-7 ">
               <img
                 src={img}
                 className="w-[155px]  border-[4px] border-slate-200 rounded-full h-[160px]"
                 alt="/"
               />
-            </div>
+            </div> */}
 
-            <hr className={styles.border_line} />
+            <hr className="mt-10 border-slate-700"/>
 
             <ul className={styles.ul_wrap}>
-              <li className={styles.li_wrap}>
+              <li onClick={handleClose} className={styles.li_wrap}>
                 <Link to="/" className={styles.menu_item}>
                   Home
                 </Link>
               </li>
-              <li className={styles.li_wrap}>
+              <li onClick={handleClose} className={styles.li_wrap}>
                 <Link to="/about" className={styles.menu_item}>
                   About me
                 </Link>
               </li>
-              <li className={styles.li_wrap}>
+              <li onClick={handleClose} className={styles.li_wrap}>
                 <Link to="/Portfolio" className={styles.menu_item}>
                   My Portfolio
                 </Link>
               </li>
 
-              <li className={styles.li_wrap}>
+              <li onClick={handleClose} className={styles.li_wrap}>
                 <Link to="/contact" className={styles.menu_item}>
                   Contact
                 </Link>
               </li>
-              <li className={styles.li_wrap}>
+              <li onClick={handleClose} className={styles.li_wrap}>
                 <Link to="/blog" className={styles.menu_item}>
                   Blog
                 </Link>

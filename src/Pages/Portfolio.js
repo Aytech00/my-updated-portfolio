@@ -10,6 +10,11 @@ import img7 from "../Assets/letusrecon.png";
 import img9 from '../Assets/magnolia.png'
 import img10 from '../Assets/annex.png'
 import img11 from '../Assets/nurse.png'
+import img12 from "../Assets/amzon.png";
+import img13 from "../Assets/ngo.png";
+
+
+
 
 
 
@@ -17,10 +22,15 @@ import {BsBoxArrowUpRight} from 'react-icons/bs'
 
 
 const PORTFOLIO_DATA = [
-  { id: 1, title: "CrypTix Ticket Creator", link: "https://www.cryptixnft.io/", img: img1 },
+  {
+    id: 1,
+    title: "CrypTix NFT Tickets dapp ",
+    link: "https://www.cryptixnft.io/",
+    img: img1,
+  },
   {
     id: 2,
-    title: "CrypTix Marketplace",
+    title: "CrypTix NFT Marketplace",
     link: "https://marketplace.cryptix.app/",
     img: img5,
   },
@@ -30,7 +40,19 @@ const PORTFOLIO_DATA = [
     link: "https://www.letusrecon.com/",
     img: img7,
   },
-  { id: 4, title: "AnnexVape", link: "https://annexvape.com", img: img10 },
+  {
+    id: 10,
+    title: "Mutivendor store",
+    link: "https://frontend-nextjs-14jz.vercel.app/",
+    img: img12,
+  },
+  {
+    id: 11,
+    title: "NGO",
+    link: "https://hopeorukotanfoundation.org/",
+    img: img13,
+  },
+  { id: 4, title: "Annex vape store", link: "https://annexvape.com", img: img10 },
   {
     id: 5,
     title: "Nursingwithlight",
