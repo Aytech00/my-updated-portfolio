@@ -11,6 +11,8 @@ const Sidebar = () => {
 
   const menuToggler = () => {
     setOpen(!isOpen);
+
+ 
   };
 
   const handleClose = ()=> {
@@ -24,7 +26,7 @@ setOpen(!isOpen)
     <div className="md:grid md:grid-cols-sidebar  lg:grid-cols-sidebar 2xl:grid-cols-xlsidebar  ">
       <div className={styles.main_wrap}>
         <div
-          className={` ${styles.toggle_btn_wrap} bg-[#1d2c4587]  md:bg-transparent `}
+          className={` ${styles.toggle_btn_wrap} bg-transparent `}
         >
           <FaIcons.FaAlignLeft
             className={`${styles.toggle_icon} text-slate-50`}
@@ -54,7 +56,7 @@ setOpen(!isOpen)
               />
             </div> */}
 
-            <hr className="mt-10 border-slate-700"/>
+            <hr className={`mt-10 ${styles.border_up}`}/>
 
             <ul className={styles.ul_wrap}>
               <li onClick={handleClose} className={styles.li_wrap}>

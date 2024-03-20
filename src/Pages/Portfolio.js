@@ -76,7 +76,7 @@ const PORTFOLIO_DATA = [
 
 const Portfolio = () => {
   return (
-    <div className=" py-7 md:py-20 px-10  font-main">
+    <div className=" py-14 md:py-28 container font-main">
       <div className="mb-10">
         <h2 className="text-slate-50 text-2xl  md:text-3xl font-semibold">PORTFOLIO</h2>
       </div>
@@ -85,7 +85,7 @@ const Portfolio = () => {
           <div key={item.id} className="mb-14">
             <div className="">
               <img
-                className=" w-full sm:w-full md:w-[300px] lg:w-[300px] border-2 border-[#cccccc20]  rounded-sm shadow-lg mb-4"
+                className=" w-full sm:w-full md:w-[300px] lg:w-[300px] border p-4 bg-transparent border-[#cccccc20]  rounded-sm shadow-lg mb-4"
                 src={item.img}
                 alt=""
               />

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPen, faCode } from "@fortawesome/free-solid-svg-icons";
 
-
 const Variant2 = {
   hidden: {
     y: 70,
@@ -15,7 +14,7 @@ const Variant2 = {
     y: 0,
     opacity: 2,
     transition: {
-      delay: 1,
+      delay: 0.1,
       duration: 0.7,
     },
   },
@@ -51,11 +50,9 @@ const Variant2 = {
 // };
 
 const About = (props) => {
-
-
-  document.title = " About me "
+  document.title = " About me ";
   return (
-    <div className={` ${styles.about_main_container} font-main`}>
+    <div className={` py-10  md:py-28 container font-main`}>
       <h1 className={styles.title}>ABOUT ME</h1>
 
       <motion.div
@@ -69,7 +66,7 @@ const About = (props) => {
           {" "}
           My name is Faseesin Ayokunumi
         </h3>
-        <p className={styles.about_text}>
+        <p className="text-white leading-loose">
           I specialize in creating visually appealing and highly functional user
           interfaces for websites and web applications. I am able to interpret
           design mockups and translate them into functional user interfaces,
@@ -78,32 +75,6 @@ const About = (props) => {
           communication and collaboration skills, and i'm able to work closely
           with other team members to achieve project goals.
         </p>
-
-        <div className={styles.skill_main_wrap}>
-          <h3 className={styles.skill_title}>MY STACKS</h3>
-          <ul className="grid grid-cols-3 md:grid-cols-8">
-            <li className={styles.skill_li}>Reactjs</li>
-            <li className={styles.skill_li}>Typescript</li>
-            <li className={styles.skill_li}>Redux</li>
-            <li className={styles.skill_li}>Nextjs</li>
-            <li className={styles.skill_li}>Git</li>
-            <li className={styles.skill_li}>Jest</li>
-            <li className={styles.skill_li}>CSS</li>
-            <li className={styles.skill_li}>SASS</li>
-
-            <li className={styles.skill_li}>Tailwindcss</li>
-
-            <li className={styles.skill_li}>Material-UI</li>
-
-            <li className={styles.skill_li}>WordPress</li>
-            <li className={styles.skill_li}>Webflow</li>
-            <li className={styles.skill_li}>Shopify</li>
-          </ul>
-        </div>
-
-        {/* <div className={styles.resume_btn_wrap}>
-          <button className={styles.resume_btn}>RESUME</button>
-        </div> */}
       </motion.div>
 
       {/* Service */}

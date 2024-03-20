@@ -63,69 +63,71 @@ const Home = () => {
 
   return (
     <div>
-      <div className="py-20 ">
-        <div className={ ` flex justify-center items-center h-[60vh]   font-main `}>
-          <div>
-            <motion.div
-              variants={Variant1}
-              initial="hidden"
-              animate="visible"
-              className={styles.title_wrap}
-            >
-              <h1 className={styles.title}>
-                Hi,I am <span className={styles.name_wrap}>Ayo</span>
-              </h1>
-            </motion.div>
+      <div className="py-14 md:py-28 md:container ">
+        <div className={` text-center   font-main `}>
+          <div className="  ">
+            <div>
+              <motion.div
+                variants={Variant1}
+                initial="hidden"
+                animate="visible"
+                className={styles.title_wrap}
+              >
+                <h1 className={styles.title}>
+                  Hi,I am <span className={styles.name_wrap}>Ayo</span>
+                </h1>
+              </motion.div>
 
-            <motion.div
-              variants={Variant2}
-              initial="hidden"
-              animate="visible"
-              className={styles.text_wrap}
-            >
-              <p className={styles.text}>
-                I am a Software Engineer. I provide functional websites with
-                perfect design. I also make website interactive with web
-                animations.
-              </p>
-            </motion.div>
+              <motion.div
+                variants={Variant2}
+                initial="hidden"
+                animate="visible"
+                className={styles.text_wrap}
+              >
+                <p className="  md:w-[700px] leading-loose mx-auto text-white">
+                  I am a Software Engineer. I provide functional websites with
+                  perfect design. I also make website interactive with web
+                  animations.
+                </p>
+              </motion.div>
 
-            <motion.ul
-              variants={Variant3}
-              initial="hidden"
-              animate="visible"
-              className={styles.icon_wrap}
-            >
-              <a
-                target="_blank
+              <motion.ul
+                variants={Variant3}
+                initial="hidden"
+                animate="visible"
+                className={styles.icon_wrap}
+              >
+                <a
+                  target="_blank
               "
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/faseesin-ayokunumi/"
-              >
-                <li className={styles.linkedin_icon_wrap}>
-                  <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
-                </li>
-              </a>
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/faseesin-ayokunumi/"
+                >
+                  <li className={styles.linkedin_icon_wrap}>
+                    <FaIcons.FaLinkedinIn className={styles.linkedin_icon} />
+                  </li>
+                </a>
 
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/Aytechng"
-              >
-                <li className={styles.twitter_icon_wrap}>
-                  <FaIcons.FaTwitter className={styles.twitter_icon} />
-                </li>
-              </a>
-              <a
-                target="_blank
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/Aytechng"
+                >
+                  <li className={styles.twitter_icon_wrap}>
+                    <FaIcons.FaTwitter className={styles.twitter_icon} />
+                  </li>
+                </a>
+                <a
+                  target="_blank
               "
-                href="https://github.com/Aytech00"
-              >
-                <li className={styles.github_icon_wrap}>
-                  <FaIcons.FaGithub className={styles.github_icon} />
-                </li>
-              </a>
-            </motion.ul>
+                  href="https://github.com/Aytech00"
+                >
+                  <li className={styles.github_icon_wrap}>
+                    <FaIcons.FaGithub className={styles.github_icon} />
+                  </li>
+                </a>
+              </motion.ul>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,3 @@
-.about_main_container {
-
-  padding: 7% 5%;
-}
 
 .title {
    
@@ -30,64 +26,19 @@
 }
 
 .about_text {
-  width: 70%;
+
   color: #ccc;
   line-height: 2;
 }
-.skill_main_wrap{
-  margin-top: 6%;
-  
-}
-
-.skill_ul_wrap{
-  display: grid;
- 
-  
-}
-.skill_title{
-   color: whitesmoke;
-  margin-bottom: 18px;
-  font-size: 25px;
-  font-weight: 600;
-}
-.skill_li{
-  list-style: none;
-  margin: 5px;
-  font-size: 14px;
-  color: #64ffda;
-  border: 1px solid #64ffdb72;
-  padding: 5px 10px;
-  border-radius: 20px;
-  
-}
 
 
 
-.testimonial_main_wrap{
-    margin-top: 3%;
-    padding: 6% 1%;
-    
 
-}
 
-.testimonial_title{
-    color: whitesmoke;
-    font-size: 30px;
-    font-weight: 600;
-    
-    
-}
 
-/* .testimonial_wrap{
-    background-color: rgba(234, 233, 233, 0.043);
-    
-} */
-.testimonial_text{
-    width: 65%;
-    margin-top: 2%;
-    font-style: italic;
-    color: #ccc;
-}
+
+
+
 
 /* .testimonial-wrap::after {
     border-color: #191d2b transparent transparent #191d2b;
@@ -111,33 +62,12 @@
   .title{
     font-size: 30px;
   }
-  .about_main_container {
-   padding: 15% 6%;
-  }
+
   
 
-  .about_text {
-    width: 100%;
-    line-height: 2.7;
-    font-size: 15px;
-  }
 
 
-  .skill_main_wrap{
-  margin-top: 15%;
-}
-.skill_title{
-  font-size: 26px;
-}
- .skill_ul_wrap{
-  display: flex;
-  flex-wrap: wrap;
-  
-}
 
-.skill_li{
-  font-size: 13px;
-}
   /* .service_main_wrap{
     margin-top: 15%;
      padding: 7% 0%;
