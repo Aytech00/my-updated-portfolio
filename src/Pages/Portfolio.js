@@ -76,16 +76,16 @@ const PORTFOLIO_DATA = [
 
 const Portfolio = () => {
   return (
-    <div className=" py-14 md:py-28 container font-main">
+    <div className=" py-6 md:py-14 container font-main">
       <div className="mb-10">
-        <h2 className="text-slate-50 text-2xl  md:text-3xl font-semibold">PORTFOLIO</h2>
+        <h2 className="text-slate-50 text-xl md:text-3xl ">PORTFOLIO</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {PORTFOLIO_DATA.map((item) => (
           <div key={item.id} className="mb-14">
             <div className="">
               <img
-                className=" w-full sm:w-full md:w-[300px] lg:w-[300px] border p-4 bg-transparent border-[#cccccc20]  rounded-sm shadow-lg mb-4"
+                className=" w-full sm:w-full md:w-[300px] lg:w-[300px] bg-[#cccccc09] border p-4 bg-transparent border-[#cccccc20]  rounded-sm shadow-lg mb-4"
                 src={item.img}
                 alt=""
               />

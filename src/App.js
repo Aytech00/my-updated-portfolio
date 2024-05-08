@@ -6,20 +6,19 @@ import Sidebar from "./Layouts/Sidebar";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
-import Resume from "./Pages/Resume"
 import About from './Pages/About'
 import Blog from "./Pages/blog";
+import DefaultLayout from "./Layouts/DefaultLayout";
 
 // Create routes from elements
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Sidebar />}>
+    <Route path="/" element={<DefaultLayout />}>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/resume" element={<Resume />} />
       <Route path="/blog" element={<Blog />} />
     </Route>
   )

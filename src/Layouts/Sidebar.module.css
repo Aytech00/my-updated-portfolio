@@ -140,13 +140,13 @@ color: whitesmoke;
 /* Mobile */
 
 @media screen and (max-width: 900px) {
-  .sidebar_wrap {
+  /* .sidebar_wrap {
     left: -100%;
-  }
-  .sidebar_wrap.active {
+  } */
+  /* .sidebar_wrap.active {
     left: 0;
     background-color:#101e37 ;
-  }
+  } */
 
   .close_icon {
     display: block;

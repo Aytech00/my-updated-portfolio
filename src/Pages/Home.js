@@ -63,7 +63,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="py-14 md:py-28 md:container ">
+      <div className=" flex justify-center items-center  h-[60vh] ">
         <div className={` text-center   font-main `}>
           <div className="  ">
             <div>
@@ -84,9 +84,9 @@ const Home = () => {
                 animate="visible"
                 className={styles.text_wrap}
               >
-                <p className="  md:w-[700px] leading-loose mx-auto text-white">
+                <p className="  md:w-[700px] font-light leading-loose mx-auto text-white">
                   I am a Software Engineer. I provide functional websites with
-                  perfect design. I also make website interactive with web
+                  perfect design. I  make website interactive with web
                   animations.
                 </p>
               </motion.div>

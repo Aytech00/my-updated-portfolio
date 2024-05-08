@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     container: {
       padding: {
-        DEFAULT: "2rem",
+        DEFAULT: "1rem",
         sm: "2rem",
         lg: "4rem",
         xl: "5rem",
@@ -15,14 +15,17 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         sidebar: "270px 1150px",
-        xlsidebar: "270px 1640px", // 👈 for sidebar layout. adds grid-cols-sidebar class
+        xlsidebar: "270px 1640px", 
       },
       gridTemplateRows: {
-        header: "64px auto", // 👈 for the navbar layout. adds grid-rows-header class
+        header: "64px auto", 
+      },
+      colors: {
+        "secondary": "#64ffda"
       },
 
       fontFamily: {
-        main: ["Work Sans", "sans - serif"],
+        main: ["Roboto", "sans-serif"],
       },
     },
   },

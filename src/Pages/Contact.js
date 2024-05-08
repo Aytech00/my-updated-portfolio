@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 
 const Variant1 = {
   hidden: {
-    y: 70,
+    y: 50,
     opacity: 0,
   },
 
@@ -15,7 +15,7 @@ const Variant1 = {
     opacity: 2,
     transition: {
       delay: 0.5,
-      duration: 0.7,
+      duration: 0.5,
     },
   },
 };
@@ -40,8 +40,8 @@ const Variant2 = {
 const Contact = () => {
   
   return (
-    <div className={ ` py-14 md:py-28  container font-main`}>
-      <h1 className={Styles.contact_title}>CONTACT ME</h1>
+    <div className={ ` py-7 md:py-14  container font-main`}>
+      <h1 className=" text-xl md:text-3xl text-white mb-5">CONTACT ME</h1>
 
       <motion.div variants={Variant1} initial="hidden" animate="visible" className={Styles.phone_wrap}>
         <div>
