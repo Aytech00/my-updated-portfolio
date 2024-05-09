@@ -110,15 +110,15 @@ const Portfolio = () => {
               <h4 className="text-slate-100 text-sm mb-5">{item.title}</h4>
               <ul className="flex justify-start gap-2 mb-6 ">
                 {item.stack.map((stack, i) => (
-                  <li className="text-white shadow-md bg-[#132f4e] text-[12px] font-light rounded-full px-3 py-2">
+                  <li className="text-secondary shadow-md bg-[#132f4e7b] text-[12px] font-light rounded-full px-3 py-2">
                     {stack}
                   </li>
                 ))}
               </ul>
               <div>
                 <a target="_blank" rel="noreferrer" href={item.link}>
-                  <button className="border-0 flex items-center  rounded-md text-sm  text-[#64ffda] hover:text-[#64ffdbbd] ">
-                    View live
+                  <button className="border-0 flex items-center text-white text-[13px] transition-all hover:scale-105  ">
+                    View
                     <BsBoxArrowUpRight className=" ml-2" />
                   </button>
                 </a>
