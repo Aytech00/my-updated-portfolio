@@ -131,7 +131,7 @@ const Sidebar = () => {
                 <li key={index} className="mb-5">
                   <Link
                     to={item.url}
-                    className={`group text-white !text-[15px] uppercase relative flex items-center gap-1  py-0.1 px-4   duration-75 ease-linear  ${
+                    className={`group  !text-[15px] uppercase relative flex items-center gap-1  py-0.1 px-4   duration-75 ease-linear  ${
                       pathname === item.url ? " text-black bg-secondary" : ""
                     }  `}
                   >

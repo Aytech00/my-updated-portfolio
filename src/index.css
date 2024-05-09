@@ -17,6 +17,18 @@
   
 }
 
+@layer base {
+::-webkit-scrollbar-thumb{
+@apply bg-transparent 
+}
+::-webkit-scrollbar{
+@apply w-1 h-1 bg-transparent
+}
+::-webkit-scrollbar-thumb{
+@apply w-1   bg-secondary /*color trackbar*/
+}
+
+}
 
 body{
   background-color: var(--primary);
