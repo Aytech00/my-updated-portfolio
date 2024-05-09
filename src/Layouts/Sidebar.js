@@ -24,7 +24,7 @@ const LINKS = [
     ),
   },
   {
-    name: "About Me",
+    name: "About",
     url: "/about",
     icon: (
       <svg
@@ -43,7 +43,7 @@ const LINKS = [
     ),
   },
   {
-    name: "Portfolio ",
+    name: "Projects",
     url: "/portfolio",
     icon: (
       <svg
@@ -62,7 +62,7 @@ const LINKS = [
     ),
   },
   {
-    name: "Contact me",
+    name: "Contact",
     url: "/contact",
     icon: (
       <svg
@@ -98,7 +98,7 @@ const Sidebar = () => {
   return (
     <div>
       <aside
-        className={`absolute font-main border-r border-r-[#cccccc29] z-50 bg-[#091221] flex h-screen text-white w-[250px] flex-col bg-o-dark overflow-y-hidden duration-300 ease-linear  lg:static lg:translate-x-0 ${
+        className={`absolute font-main border-r border-r-[#cccccc13] z-50 bg-[#091221] flex h-screen text-white w-[250px] flex-col bg-o-dark overflow-y-hidden duration-300 ease-linear  lg:static lg:translate-x-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }  `}
       >
@@ -125,14 +125,14 @@ const Sidebar = () => {
         </div>
 
         <div className="no-scrollbar  flex flex-col overflow-y-auto duration-300 ease-linear">
-          <nav className="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
+          <nav className="mt-5 py-4 px-4 lg:mt-9 ">
             <ul className="mb-6   flex flex-col gap-1.5 md:mb-14">
               {LINKS.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="mb-5">
                   <Link
                     to={item.url}
-                    className={`group text-white relative text-[15px] flex items-center gap-2 rounded-sm py-2 px-4   duration-75 ease-linear  ${
-                      item.url === pathname && "text-secondary"
+                    className={`group text-white !text-[15px] uppercase relative flex items-center gap-1  py-0.1 px-4   duration-75 ease-linear  ${
+                      pathname === item.url ? " text-black bg-secondary" : ""
                     }  `}
                   >
                     <span

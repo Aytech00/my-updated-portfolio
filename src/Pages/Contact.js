@@ -1,8 +1,9 @@
 import React from "react";
-import Styles from "./Contact.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {motion} from 'framer-motion'
+import { styles } from "../style";
 
 const Variant1 = {
   hidden: {
@@ -40,34 +41,47 @@ const Variant2 = {
 const Contact = () => {
   
   return (
-    <div className={ ` py-7 md:py-14  container font-main`}>
-      <h1 className=" text-xl md:text-3xl text-white mb-5">CONTACT ME</h1>
+    <div className={` py-7 md:py-14  container font-main`}>
+      <h1 className={` ${styles.pageTitle} mb-10`}>CONTACT ME</h1>
 
-      <motion.div variants={Variant1} initial="hidden" animate="visible" className={Styles.phone_wrap}>
+      <motion.div
+        variants={Variant1}
+        initial="hidden"
+        animate="visible"
+        className=" mb-8  py-1   text-white"
+      >
         <div>
-          <div className={Styles.phone_inner_wrap}>
-            <div className={Styles.inner_phone_icon_wrap}>
-              <FontAwesomeIcon className={Styles.phone_icon} icon={faPhone} />{" "}
+          <div className="flex gap-4 items-center">
+            <div className="">
+              <FontAwesomeIcon className="text-3xl" icon={faPhone} />{" "}
             </div>
             <div>
-              <h5 className={Styles.phone_title}>Phone</h5>
+              <h5 className="">Phone</h5>
 
-              <p className={Styles.phone_text}>+2348149684195</p>
+              <p className="">+2348149684195</p>
             </div>
           </div>
         </div>
       </motion.div>
 
-      <motion.div variants={Variant2} initial="hidden" animate="visible" className={Styles.email_wrap}>
+      <motion.div
+        variants={Variant2}
+        initial="hidden"
+        animate="visible"
+        className=" text-white"
+      >
         <div>
-          <div className={Styles.email_inner_wrap}>
-            <div className={Styles.inner_email_icon_wrap}>
-              <FontAwesomeIcon className={Styles.email_icon} icon={faEnvelope} />{" "}
+          <div className= "flex gap-4 items-center">
+            <div className="">
+              <FontAwesomeIcon
+                className=' text-3xl'
+                icon={faEnvelope}
+              />{" "}
             </div>
             <div>
-              <h5 className={Styles.email_title}>Email</h5>
+              <h5 className="">Email</h5>
 
-              <p className={Styles.email_text}>Aytechng@gmail.com</p>
+              <p className="">Aytechng@gmail.com</p>
             </div>
           </div>
         </div>

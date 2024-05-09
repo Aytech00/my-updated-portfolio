@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./About.module.css";
 import { motion } from "framer-motion";
 
+import { styles } from "../style";
 
 // const STACKS = [
 //   {
@@ -35,7 +35,7 @@ import { motion } from "framer-motion";
 // ];
 
 
-const Variant2 = {
+const Variant1 = {
   hidden: {
     y: 70,
     opacity: 0,
@@ -46,6 +46,22 @@ const Variant2 = {
     opacity: 2,
     transition: {
       delay: 0.1,
+      duration: 0.5,
+    },
+  },
+};
+
+const Variant2 = {
+  hidden: {
+    y: 70,
+    opacity: 0,
+  },
+
+  visible: {
+    y: 0,
+    opacity: 1.8,
+    transition: {
+      delay: 0.5,
       duration: 0.7,
     },
   },
@@ -84,20 +100,28 @@ const Variant2 = {
 const About = (props) => {
   document.title = " About me ";
   return (
-    <div className={` py-6  md:py-20 font-main container`}>
-      <h1 className="text-xl  md:text-3xl mb-5 text-white">ABOUT ME</h1>
+    <div className={` py-6  md:py-14 font-main container`}>
+      <h1 className={` ${styles.pageTitle} mb-10`}>ABOUT</h1>
 
+      <motion.div
+        variants={Variant1}
+        initial="hidden"
+        animate="visible"
+        className=""
+      >
+        <h3 className=" mb-5 text-base text-secondary">
+          {" "}
+          My name is Faseesin Ayokunumi
+        </h3>
+      
+      </motion.div>
       <motion.div
         variants={Variant2}
         initial="hidden"
         animate="visible"
-     
         className=""
       >
-        <h3 className={styles.about_sub_title}>
-          {" "}
-          My name is Faseesin Ayokunumi
-        </h3>
+      
         <p className="text-white font-light leading-loose">
           I specialize in creating visually appealing and highly functional user
           interfaces for websites and web applications. I am able to interpret
@@ -108,8 +132,6 @@ const About = (props) => {
           with other team members to achieve project goals.
         </p>
       </motion.div>
-
-    
     </div>
   );
 };
