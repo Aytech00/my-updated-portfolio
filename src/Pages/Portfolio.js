@@ -12,13 +12,14 @@ import img10 from "../Assets/annex.png";
 import img11 from "../Assets/nurse.png";
 import img12 from "../Assets/amzon.png";
 import img13 from "../Assets/ngo.png";
+import img14 from "../Assets/note.png";
 
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { styles } from "../style";
 
 const PORTFOLIO_DATA = [
   {
-    title: "CrypTix Ticket dApp ",
+    title: "Ticket System ",
     link: "https://www.cryptixnft.io/",
     img: img1,
     stack: ["Sveltejs", "Nestjs", "Smart contract"],
@@ -30,32 +31,39 @@ const PORTFOLIO_DATA = [
     stack: ["Reactjs", "Nestjs", "Boostrap 5", "css"],
   },
   {
-    title: "LetUsRecon Reconnaissance ",
-    link: "https://www.letusrecon.com/",
+    title: " Reconnaissance Application",
+    link: "https://frontend-n9dcalori-letusrecon.vercel.app/",
     img: img7,
     stack: ["Nextjs", "Nestjs", "Tailwind css"],
   },
+
   {
-    title: "Nursingwithlight",
+    title: " GCMS System",
+    link: "https://mummyserena.netlify.app/",
+    img: img14,
+    stack: ["Reactjs", "Styled Component", "Tailwind css"],
+  },
+  {
+    title: "Blog",
     link: "https://nursingwithlight.com/",
     img: img11,
 
     stack: ["WordPress", "Javascript", "Quiz maker"],
   },
   {
-    title: "Mutivendor store",
+    title: "Mutivendor Store",
     link: "https://frontend-nextjs-14jz.vercel.app/",
     img: img12,
     stack: ["Nextjs", "Expressjs", "Tailwind css"],
   },
   {
-    title: "Hope Foundation",
+    title: "NGO website",
     link: "https://hopeorukotanfoundation.org/",
     img: img13,
     stack: ["Wordpress"],
   },
   {
-    title: "Annex Vape Store",
+    title: "Ecommerce website",
     link: "https://annexvape.com",
     img: img10,
     stack: ["WordPress", "Woocomerce", "Stripe"],
@@ -68,21 +76,21 @@ const PORTFOLIO_DATA = [
     stack: ["React Native", "Taiwlind css"],
   },
 
-  {
-    title: "Zyteon NFT Marketplace",
-    link: "https://zyteon.com",
-    img: img2,
-    stack: ["React", "Smart contract"],
-  },
+  // {
+  //   title: "NFT Marketplace",
+  //   link: "https://zyteon.com",
+  //   img: img2,
+  //   stack: ["React", "Smart contract"],
+  // },
   {
     id: 8,
-    title: "Inksea",
+    title: "NFT Marketplace",
     link: "https://inksea.io",
     img: img3,
     stack: ["React", "Smart contract"],
   },
   {
-    title: "Ellise",
+    title: "Affilate System",
     link: "https://elise.netlify.app",
     img: img4,
     stack: ["Javascript", "Html", "CSS", "jquery"],
