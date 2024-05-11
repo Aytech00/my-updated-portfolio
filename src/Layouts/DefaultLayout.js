@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 
+
 export default function DefaultLayout() {
   return (
     <div className="flex bg-o-bg-dark h-screen overflow-hidden">

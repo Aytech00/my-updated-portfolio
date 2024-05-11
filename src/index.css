@@ -1,43 +1,33 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
-   
-       --primary: #0b1628;
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary: #0b1628;
 }
 
-*, 
+*,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
-  
 }
 
 @layer base {
-::-webkit-scrollbar-thumb{
-@apply bg-transparent 
-}
-::-webkit-scrollbar{
-@apply w-1 h-1 bg-transparent
-}
-::-webkit-scrollbar-thumb{
-@apply w-1   bg-secondary /*color trackbar*/
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar {
+    @apply w-1 h-1 bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply w-1   bg-secondary /*color trackbar*/;
+  }
 }
 
-}
-
-body{
+body {
   background-color: var(--primary);
 
-
- 
- overflow-x: clip !important;
+  overflow-x: clip !important;
 }
-
 
 @tailwind base;
 @tailwind components;

@@ -17,12 +17,14 @@ import img14 from "../Assets/note.png";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { styles } from "../style";
 
+
+
 const PORTFOLIO_DATA = [
   {
     title: "Ticket System ",
     link: "https://www.cryptixnft.io/",
     img: img1,
-    stack: ["Sveltejs", "Nestjs", "Smart contract"],
+    stack: ["Sveltejs", "Nestjs", "Smart contract", "Boostrap", "Web 3 APIS",],
   },
   {
     title: "NFT Marketplace",
@@ -31,39 +33,39 @@ const PORTFOLIO_DATA = [
     stack: ["Reactjs", "Nestjs", "Boostrap 5", "css"],
   },
   {
-    title: " Reconnaissance Application",
+    title: " Reconnaissance Tool",
     link: "https://frontend-n9dcalori-letusrecon.vercel.app/",
     img: img7,
-    stack: ["Nextjs", "Nestjs", "Tailwind css"],
+    stack: ["Nextjs", "Next Auth", "Nestjs", "Tailwind css", "Stripe"],
   },
 
   {
-    title: " GCMS System",
+    title: " GCMS Website",
     link: "https://mummyserena.netlify.app/",
     img: img14,
-    stack: ["Reactjs", "Styled Component", "Tailwind css"],
+    stack: ["Reactjs", "Styled Component", "Tailwind css", "Expressjs"],
   },
   {
-    title: "Blog",
+    title: "Blog Website",
     link: "https://nursingwithlight.com/",
     img: img11,
 
-    stack: ["WordPress", "Javascript", "Quiz maker"],
+    stack: ["WordPress", "Javascript", "Quiz maker", "Yoast"],
   },
   {
-    title: "Mutivendor Store",
+    title: "Mutivendor ecommerce Store",
     link: "https://frontend-nextjs-14jz.vercel.app/",
     img: img12,
-    stack: ["Nextjs", "Expressjs", "Tailwind css"],
+    stack: ["Nextjs", "Expressjs", "Tailwind css", "Stripe"],
   },
   {
-    title: "NGO website",
+    title: "NGO Website",
     link: "https://hopeorukotanfoundation.org/",
     img: img13,
     stack: ["Wordpress"],
   },
   {
-    title: "Ecommerce website",
+    title: "ecommerce Website",
     link: "https://annexvape.com",
     img: img10,
     stack: ["WordPress", "Woocomerce", "Stripe"],
@@ -104,29 +106,31 @@ const Portfolio = () => {
       <div className="mb-10">
         <h2 className={`${styles.pageTitle}`}>PROJECTS</h2>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {PORTFOLIO_DATA.map((item, i) => (
           <div key={i} className="mb-14  ">
             <div className="">
               <img
-                className=" w-full sm:w-full md:w-[300px]  lg:w-[300px]  border p-3 bg-[#132f4e4b]  shadow border-[#cccccc20]  mb-4"
+                className=" w-full sm:w-full md:w-full  lg:w-full  border p-3 bg-[#132f4e4b]  shadow border-[#cccccc20]  mb-4"
                 src={item.img}
                 alt=""
               />
             </div>
             <div className="px-1">
               <h4 className="text-slate-100 text-sm mb-5">{item.title}</h4>
-              <ul className="flex justify-start gap-2 mb-6 ">
+              <ul className="flex justify-start flex-wrap gap-2  mb-6 ">
                 {item.stack.map((stack, i) => (
-                  <li className="text-secondary shadow-md bg-[#132f4e7b] text-[12px] font-light rounded-full px-3 py-2">
-                    {stack}
+                  <li className="  -ml-1 ">
+                    <div className="flex text-secondary flex-wrap items-center px-3 shadow-md bg-[#132f4e7b] text-xs font-light  rounded-full  py-1">
+                      {stack}
+                    </div>
                   </li>
                 ))}
               </ul>
               <div>
                 <a target="_blank" rel="noreferrer" href={item.link}>
                   <button className="border-0 flex items-center text-white text-[13px] transition-all hover:scale-105  ">
-                    View
+                    View live
                     <BsBoxArrowUpRight className=" ml-2" />
                   </button>
                 </a>

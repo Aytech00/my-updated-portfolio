@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import { styles } from "../style";
 
 // const STACKS = [
@@ -33,7 +32,6 @@ import { styles } from "../style";
 //     stack: "Reactjs",
 //   },
 // ];
-
 
 const Variant1 = {
   hidden: {
@@ -96,9 +94,10 @@ const Variant2 = {
 //   },
 // };
 
+console.log("Hello world!");
 
 const About = (props) => {
-  document.title = " About me ";
+  document.title = "About me";
   return (
     <div className={` py-6  md:py-14 font-main container`}>
       <h1 className={` ${styles.pageTitle} mb-10`}>ABOUT</h1>
@@ -110,10 +109,9 @@ const About = (props) => {
         className=""
       >
         <h3 className=" mb-5 text-base text-secondary">
-          {" "}
+        
           My name is Faseesin Ayokunumi
         </h3>
-      
       </motion.div>
       <motion.div
         variants={Variant2}
@@ -121,7 +119,6 @@ const About = (props) => {
         animate="visible"
         className=""
       >
-      
         <p className="text-white font-light leading-loose">
           I specialize in creating visually appealing and highly functional user
           interfaces for websites and web applications. I am able to interpret

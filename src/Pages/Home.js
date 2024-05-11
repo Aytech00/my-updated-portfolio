@@ -86,7 +86,7 @@ const Home = () => {
               >
                 <p className="  md:w-[700px] font-light leading-loose mx-auto text-white">
                   I am a Software Engineer. I provide functional websites with
-                  perfect design. I  make website interactive with web
+                  perfect design. I make website interactive with web
                   animations.
                 </p>
               </motion.div>
