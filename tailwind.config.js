@@ -15,13 +15,14 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         sidebar: "270px 1150px",
-        xlsidebar: "270px 1640px", 
+        xlsidebar: "270px 1640px",
       },
       gridTemplateRows: {
-        header: "64px auto", 
+        header: "64px auto",
       },
       colors: {
-        "secondary": "#64ffda"
+        secondary: "#64ffda",
+        lightCyan: "#64ffdbbb",
       },
 
       fontFamily: {

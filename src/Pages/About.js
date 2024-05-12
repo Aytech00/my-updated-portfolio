@@ -94,12 +94,42 @@ const Variant2 = {
 //   },
 // };
 
-console.log("Hello world!");
+const SKILLS = [
+  {
+    skill: "React.js",
+  },
+
+  {
+    skill: "Nextjs",
+  },
+
+  {
+    skill: "Sveltejs",
+  },
+
+  {
+    skill: "Boostrap",
+  },
+
+  {
+    skill: "Tailwind css",
+  },
+  {
+    skill: "HTML",
+  },
+  {
+    skill: "Javascript",
+  },
+
+  {
+    skill: "Git",
+  },
+];
 
 const About = (props) => {
   document.title = "About me";
   return (
-    <div className={` py-6  md:py-14 font-main container`}>
+    <div className={` py-6  md:py-10 font-main container`}>
       <h1 className={` ${styles.pageTitle} mb-10`}>ABOUT</h1>
 
       <motion.div
@@ -109,7 +139,6 @@ const About = (props) => {
         className=""
       >
         <h3 className=" mb-5 text-base text-secondary">
-        
           My name is Faseesin Ayokunumi
         </h3>
       </motion.div>
@@ -117,7 +146,7 @@ const About = (props) => {
         variants={Variant2}
         initial="hidden"
         animate="visible"
-        className=""
+        className="mb-10"
       >
         <p className="text-white font-light leading-loose">
           I specialize in creating visually appealing and highly functional user
@@ -129,6 +158,20 @@ const About = (props) => {
           with other team members to achieve project goals.
         </p>
       </motion.div>
+
+      <div>
+        <h1 className="text-white font-medium mb-8">
+          SOME TECHNOLOGIES I'VE WORKED WITH
+        </h1>
+
+        <ul className="flex flex-wrap  gap-4">
+          {SKILLS.map((item) => (
+            <li className="py-2 px-4 text-secondary shadow-md bg-[#132f4e7b] text-[14px] font-light  rounded-full">
+              {item.skill}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

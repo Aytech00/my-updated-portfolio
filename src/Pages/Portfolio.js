@@ -6,7 +6,6 @@ import img3 from "../Assets/ink.png";
 import img4 from "../Assets/elise.png";
 import img5 from "../Assets/cryptixmarket.png";
 import img7 from "../Assets/letusrecon.png";
-
 import img9 from "../Assets/magnolia.png";
 import img10 from "../Assets/annex.png";
 import img11 from "../Assets/nurse.png";
@@ -102,7 +101,7 @@ const PORTFOLIO_DATA = [
 const Portfolio = () => {
     document.title = " Portfolio ";
   return (
-    <div className=" py-6 md:py-14 container font-main">
+    <div className=" py-6 md:py-10 container font-main">
       <div className="mb-10">
         <h2 className={`${styles.pageTitle}`}>PROJECTS</h2>
       </div>

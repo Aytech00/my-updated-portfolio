@@ -24,7 +24,7 @@ const LINKS = [
     ),
   },
   {
-    name: "About",
+    name: "Experience",
     url: "/about",
     icon: (
       <svg
