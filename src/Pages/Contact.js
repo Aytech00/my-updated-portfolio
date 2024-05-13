@@ -61,9 +61,9 @@ const Contact = () => {
   }
 
   return (
-    <div className=" py-5 font-main">
+    <div className=" py-3 font-main">
       <div
-        className={` px-5 md:px-10 py-10 md:py-20 bg-[#091221] border border-[#cccccc13] rounded-md  w-full `}
+        className={` px-5 md:px-10 py-10 md:py-20 bg-[#091221]  rounded-md  w-full `}
       >
         <form
           onSubmit={handleformSubmit}

@@ -130,7 +130,7 @@ const About = (props) => {
   document.title = "About me";
   return (
     <div className={` py-6  md:py-10 font-main container`}>
-      <h1 className={` ${styles.pageTitle} mb-10`}>ABOUT</h1>
+      <h1 className={` ${styles.pageTitle} mb-5`}>ABOUT</h1>
 
       <motion.div
         variants={Variant1}
@@ -138,33 +138,29 @@ const About = (props) => {
         animate="visible"
         className=""
       >
-        <h3 className=" mb-5 text-base text-secondary">
-          My name is Faseesin Ayokunumi
-        </h3>
+      
       </motion.div>
       <motion.div
         variants={Variant2}
         initial="hidden"
         animate="visible"
-        className="mb-10"
+        className="mb-6"
       >
         <p className="text-white font-light leading-loose">
           I specialize in creating visually appealing and highly functional user
           interfaces for websites and web applications. I am able to interpret
           design mockups and translate them into functional user interfaces,
           adept at troubleshooting and resolving issues related to frontend
-          development. In addition to technical skills, i possess strong
-          communication and collaboration skills, and i'm able to work closely
-          with other team members to achieve project goals.
+          development. 
         </p>
       </motion.div>
 
-      <div>
-        <h1 className="text-white font-medium mb-8">
+      <div className="py-5">
+        <h1 className="text-white lowercase font-medium mb-8">
           SOME TECHNOLOGIES I'VE WORKED WITH
         </h1>
 
-        <ul className="flex flex-wrap  gap-4">
+        <ul className="flex flex-wrap  gap-4 ">
           {SKILLS.map((item) => (
             <li className="py-2 px-4 text-secondary shadow-md bg-[#132f4e7b] text-[14px] font-light  rounded-full">
               {item.skill}
